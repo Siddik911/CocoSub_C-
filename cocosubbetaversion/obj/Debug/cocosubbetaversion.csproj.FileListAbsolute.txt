@@ -91,3 +91,37 @@ C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocos
 C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
 C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
 C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.SuggestedBindingRedirects.cache
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe.config
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Google.Protobuf.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\MySql.Data.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Buffers.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.IO.Pipelines.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Memory.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\ZstdSharp.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Google.Protobuf.pdb
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Google.Protobuf.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\MySql.Data.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Buffers.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.IO.Pipelines.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Memory.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\System.Threading.Tasks.Extensions.xml
