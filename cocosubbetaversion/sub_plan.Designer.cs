@@ -45,8 +45,8 @@
             this.ent_button.FillColor = System.Drawing.Color.White;
             this.ent_button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ent_button.ForeColor = System.Drawing.Color.Black;
-            this.ent_button.Location = new System.Drawing.Point(117, 613);
-            this.ent_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ent_button.Location = new System.Drawing.Point(115, 586);
+            this.ent_button.Margin = new System.Windows.Forms.Padding(2);
             this.ent_button.Name = "ent_button";
             this.ent_button.Size = new System.Drawing.Size(204, 50);
             this.ent_button.TabIndex = 0;
@@ -64,7 +64,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(411, 613);
+            this.guna2Button1.Location = new System.Drawing.Point(414, 586);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(204, 50);
@@ -83,7 +83,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(697, 613);
+            this.guna2Button2.Location = new System.Drawing.Point(692, 586);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(204, 50);
@@ -95,11 +95,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__22_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.ent_button);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "sub_plan";
             this.Text = "sub_plan";
             this.ResumeLayout(false);
