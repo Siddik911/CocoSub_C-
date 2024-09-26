@@ -58,7 +58,7 @@ namespace cocosubbetaversion
             this.signupbutton.TabIndex = 0;
             this.signupbutton.Text = "Sign Up";
             this.signupbutton.UseTransparentBackground = true;
-            this.signupbutton.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.signupbutton.Click += new System.EventHandler(this.signup_Click);
             // 
             // nametext
             // 
@@ -83,6 +83,7 @@ namespace cocosubbetaversion
             this.nametext.SelectedText = "";
             this.nametext.Size = new System.Drawing.Size(280, 36);
             this.nametext.TabIndex = 1;
+            this.nametext.TextChanged += new System.EventHandler(this.nametext_TextChanged);
             // 
             // emailtext
             // 
@@ -119,6 +120,7 @@ namespace cocosubbetaversion
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // passwordtext
             // 
@@ -134,7 +136,11 @@ namespace cocosubbetaversion
             this.passwordtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passwordtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordtext.Font = new System.Drawing.Font("Segoe UI", 9F);
+<<<<<<< HEAD
             this.passwordtext.ForeColor = System.Drawing.Color.Black;
+=======
+            this.passwordtext.ForeColor = System.Drawing.Color.Transparent;
+>>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             this.passwordtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordtext.Location = new System.Drawing.Point(558, 478);
             this.passwordtext.Name = "passwordtext";
@@ -143,6 +149,10 @@ namespace cocosubbetaversion
             this.passwordtext.SelectedText = "";
             this.passwordtext.Size = new System.Drawing.Size(280, 30);
             this.passwordtext.TabIndex = 5;
+<<<<<<< HEAD
+=======
+            this.passwordtext.TextChanged += new System.EventHandler(this.passwordtext_TextChanged);
+>>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             // 
             // signup
             // 

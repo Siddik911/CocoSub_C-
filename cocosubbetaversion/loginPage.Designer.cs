@@ -61,6 +61,7 @@ namespace cocosubbetaversion
             this.login_name_text.SelectedText = "";
             this.login_name_text.Size = new System.Drawing.Size(318, 46);
             this.login_name_text.TabIndex = 0;
+            this.login_name_text.TextChanged += new System.EventHandler(this.login_name_text_TextChanged);
             // 
             // login_pass_text
             // 
@@ -81,12 +82,14 @@ namespace cocosubbetaversion
             this.login_pass_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.login_pass_text.Location = new System.Drawing.Point(553, 417);
             this.login_pass_text.Name = "login_pass_text";
-            this.login_pass_text.PasswordChar = '\0';
+            this.login_pass_text.PasswordChar = '●';
             this.login_pass_text.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.login_pass_text.PlaceholderText = "";
             this.login_pass_text.SelectedText = "";
             this.login_pass_text.Size = new System.Drawing.Size(318, 49);
             this.login_pass_text.TabIndex = 1;
+            this.login_pass_text.UseSystemPasswordChar = true;
+            this.login_pass_text.TextChanged += new System.EventHandler(this.login_pass_text_TextChanged);
             // 
             // checkBox1
             // 
@@ -95,13 +98,20 @@ namespace cocosubbetaversion
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+<<<<<<< HEAD
             this.checkBox1.Location = new System.Drawing.Point(698, 471);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.checkBox1.Location = new System.Drawing.Point(458, 292);
+
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(161, 29);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // login_button
             // 
@@ -117,13 +127,19 @@ namespace cocosubbetaversion
             this.login_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.login_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.login_button.Location = new System.Drawing.Point(644, 518);
             this.login_button.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.login_button.Location = new System.Drawing.Point(411, 318);
+
+            this.login_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(140, 36);
             this.login_button.TabIndex = 3;
             this.login_button.Text = "Log In";
-            this.login_button.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.login_button.Click += new System.EventHandler(this.loginButton1_Click);
             // 
             // loginPage
             // 
@@ -137,7 +153,13 @@ namespace cocosubbetaversion
             this.Controls.Add(this.login_pass_text);
             this.Controls.Add(this.login_name_text);
             this.DoubleBuffered = true;
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(2);
+=======
+
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+>>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             this.Name = "loginPage";
             this.Text = "loginPage";
             this.Load += new System.EventHandler(this.loginPage_Load);
