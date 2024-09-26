@@ -1,4 +1,6 @@
-﻿namespace cocosubbetaversion
+﻿using System.Windows.Forms;
+
+namespace cocosubbetaversion
 {
     partial class loginPage
     {
@@ -10,7 +12,7 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -36,6 +38,7 @@
             // 
             // login_name_text
             // 
+            this.login_name_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.login_name_text.AutoRoundedCorners = true;
             this.login_name_text.BackColor = System.Drawing.Color.Transparent;
             this.login_name_text.BorderColor = System.Drawing.Color.Transparent;
@@ -50,7 +53,7 @@
             this.login_name_text.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.login_name_text.ForeColor = System.Drawing.Color.Transparent;
             this.login_name_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.login_name_text.Location = new System.Drawing.Point(558, 356);
+            this.login_name_text.Location = new System.Drawing.Point(547, 325);
             this.login_name_text.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.login_name_text.Name = "login_name_text";
             this.login_name_text.PasswordChar = '\0';
@@ -62,6 +65,7 @@
             // 
             // login_pass_text
             // 
+            this.login_pass_text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.login_pass_text.AutoRoundedCorners = true;
             this.login_pass_text.BackColor = System.Drawing.Color.Transparent;
             this.login_pass_text.BorderColor = System.Drawing.Color.Transparent;
@@ -76,7 +80,7 @@
             this.login_pass_text.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.login_pass_text.ForeColor = System.Drawing.Color.Transparent;
             this.login_pass_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.login_pass_text.Location = new System.Drawing.Point(558, 435);
+            this.login_pass_text.Location = new System.Drawing.Point(547, 403);
             this.login_pass_text.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.login_pass_text.Name = "login_pass_text";
             this.login_pass_text.PasswordChar = '\0';
@@ -88,11 +92,12 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
-            this.checkBox1.Location = new System.Drawing.Point(706, 481);
+            this.checkBox1.Location = new System.Drawing.Point(695, 449);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(149, 25);
             this.checkBox1.TabIndex = 2;
@@ -101,6 +106,7 @@
             // 
             // login_button
             // 
+            this.login_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.login_button.AutoRoundedCorners = true;
             this.login_button.BackColor = System.Drawing.Color.Transparent;
             this.login_button.BorderColor = System.Drawing.Color.Transparent;
@@ -112,7 +118,7 @@
             this.login_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.login_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(628, 529);
+            this.login_button.Location = new System.Drawing.Point(616, 490);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(180, 45);
             this.login_button.TabIndex = 3;
@@ -124,11 +130,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__19_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 712);
             this.Controls.Add(this.login_button);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.login_pass_text);
             this.Controls.Add(this.login_name_text);
+            this.DoubleBuffered = true;
             this.Name = "loginPage";
             this.Text = "loginPage";
             this.Load += new System.EventHandler(this.loginPage_Load);

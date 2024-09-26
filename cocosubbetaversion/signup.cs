@@ -26,5 +26,10 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void emailtext_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

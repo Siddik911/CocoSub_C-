@@ -26,5 +26,10 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
