@@ -52,7 +52,7 @@ namespace cocosubbetaversion
             this.signupbutton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.signupbutton.ForeColor = System.Drawing.Color.White;
             this.signupbutton.Location = new System.Drawing.Point(636, 583);
-            this.signupbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.signupbutton.Margin = new System.Windows.Forms.Padding(2);
             this.signupbutton.Name = "signupbutton";
             this.signupbutton.Size = new System.Drawing.Size(120, 27);
             this.signupbutton.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace cocosubbetaversion
             this.nametext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nametext.AutoRoundedCorners = true;
             this.nametext.BackColor = System.Drawing.Color.Transparent;
-            this.nametext.BorderRadius = 12;
+            this.nametext.BorderRadius = 17;
             this.nametext.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nametext.DefaultText = "";
             this.nametext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -74,14 +74,14 @@ namespace cocosubbetaversion
             this.nametext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.nametext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nametext.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nametext.ForeColor = System.Drawing.Color.Transparent;
+            this.nametext.ForeColor = System.Drawing.Color.Black;
             this.nametext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nametext.Location = new System.Drawing.Point(558, 322);
             this.nametext.Name = "nametext";
             this.nametext.PasswordChar = '\0';
             this.nametext.PlaceholderText = "";
             this.nametext.SelectedText = "";
-            this.nametext.Size = new System.Drawing.Size(280, 27);
+            this.nametext.Size = new System.Drawing.Size(280, 36);
             this.nametext.TabIndex = 1;
             // 
             // emailtext
@@ -89,7 +89,7 @@ namespace cocosubbetaversion
             this.emailtext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.emailtext.AutoRoundedCorners = true;
             this.emailtext.BackColor = System.Drawing.Color.Transparent;
-            this.emailtext.BorderRadius = 10;
+            this.emailtext.BorderRadius = 15;
             this.emailtext.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailtext.DefaultText = "";
             this.emailtext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -100,12 +100,12 @@ namespace cocosubbetaversion
             this.emailtext.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailtext.ForeColor = System.Drawing.Color.Transparent;
             this.emailtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailtext.Location = new System.Drawing.Point(558, 404);
+            this.emailtext.Location = new System.Drawing.Point(558, 398);
             this.emailtext.Name = "emailtext";
             this.emailtext.PasswordChar = '\0';
             this.emailtext.PlaceholderText = "";
             this.emailtext.SelectedText = "";
-            this.emailtext.Size = new System.Drawing.Size(280, 23);
+            this.emailtext.Size = new System.Drawing.Size(280, 33);
             this.emailtext.TabIndex = 3;
             this.emailtext.TextChanged += new System.EventHandler(this.emailtext_TextChanged);
             // 
@@ -114,7 +114,7 @@ namespace cocosubbetaversion
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(573, 544);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 4;
@@ -158,7 +158,7 @@ namespace cocosubbetaversion
             this.Controls.Add(this.nametext);
             this.Controls.Add(this.signupbutton);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "signup";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "signup";
