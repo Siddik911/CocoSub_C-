@@ -34,7 +34,7 @@ namespace cocosubbetaversion
             this.nametext = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailtext = new Guna.UI2.WinForms.Guna2TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.passwordtext = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // signupbutton
@@ -52,13 +52,13 @@ namespace cocosubbetaversion
             this.signupbutton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.signupbutton.ForeColor = System.Drawing.Color.White;
             this.signupbutton.Location = new System.Drawing.Point(636, 583);
-            this.signupbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.signupbutton.Margin = new System.Windows.Forms.Padding(2);
             this.signupbutton.Name = "signupbutton";
             this.signupbutton.Size = new System.Drawing.Size(120, 27);
             this.signupbutton.TabIndex = 0;
             this.signupbutton.Text = "Sign Up";
             this.signupbutton.UseTransparentBackground = true;
-            this.signupbutton.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.signupbutton.Click += new System.EventHandler(this.signup_Click);
             // 
             // nametext
             // 
@@ -83,6 +83,7 @@ namespace cocosubbetaversion
             this.nametext.SelectedText = "";
             this.nametext.Size = new System.Drawing.Size(280, 27);
             this.nametext.TabIndex = 1;
+            this.nametext.TextChanged += new System.EventHandler(this.nametext_TextChanged);
             // 
             // emailtext
             // 
@@ -114,35 +115,37 @@ namespace cocosubbetaversion
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(573, 544);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // guna2TextBox1
+            // passwordtext
             // 
-            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 14;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(558, 478);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(280, 30);
-            this.guna2TextBox1.TabIndex = 5;
+            this.passwordtext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.passwordtext.AutoRoundedCorners = true;
+            this.passwordtext.BackColor = System.Drawing.Color.Transparent;
+            this.passwordtext.BorderRadius = 14;
+            this.passwordtext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordtext.DefaultText = "";
+            this.passwordtext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passwordtext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passwordtext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordtext.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.passwordtext.ForeColor = System.Drawing.Color.Transparent;
+            this.passwordtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordtext.Location = new System.Drawing.Point(558, 478);
+            this.passwordtext.Name = "passwordtext";
+            this.passwordtext.PasswordChar = '\0';
+            this.passwordtext.PlaceholderText = "";
+            this.passwordtext.SelectedText = "";
+            this.passwordtext.Size = new System.Drawing.Size(280, 30);
+            this.passwordtext.TabIndex = 5;
+            this.passwordtext.TextChanged += new System.EventHandler(this.passwordtext_TextChanged);
             // 
             // signup
             // 
@@ -152,13 +155,13 @@ namespace cocosubbetaversion
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__18_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.passwordtext);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.emailtext);
             this.Controls.Add(this.nametext);
             this.Controls.Add(this.signupbutton);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "signup";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "signup";
@@ -173,6 +176,6 @@ namespace cocosubbetaversion
         private Guna.UI2.WinForms.Guna2TextBox nametext;
         private Guna.UI2.WinForms.Guna2TextBox emailtext;
         private System.Windows.Forms.CheckBox checkBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox passwordtext;
     }
 }

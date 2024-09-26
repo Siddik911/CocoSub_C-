@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace cocosubbetaversion
 {
     public partial class welcomepage : Form
