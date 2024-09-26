@@ -51,3 +51,23 @@ C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetav
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.payment_details.resources
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.succesful_subscriber.resources
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_dash.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe.config
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.pdb
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\bin\Debug\Guna.UI2.dll
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.AssemblyReference.cache
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.checkout_page.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.forgot_page.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.loginPage.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.payment_details.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.signup.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_dash.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_plan.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.succesful_subscriber.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.welcomepage.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.Properties.Resources.resources
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.GenerateResource.cache
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.CoreCompileInputs.cache
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
+C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb

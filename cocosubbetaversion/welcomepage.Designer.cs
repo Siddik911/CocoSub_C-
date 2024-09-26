@@ -50,12 +50,13 @@ namespace cocosubbetaversion
             this.alreadyuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.alreadyuser.ForeColor = System.Drawing.Color.White;
             this.alreadyuser.Location = new System.Drawing.Point(282, 630);
-            this.alreadyuser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.alreadyuser.Margin = new System.Windows.Forms.Padding(2);
             this.alreadyuser.Name = "alreadyuser";
             this.alreadyuser.Size = new System.Drawing.Size(214, 29);
             this.alreadyuser.TabIndex = 0;
             this.alreadyuser.Text = "Already an user ";
             this.alreadyuser.UseTransparentBackground = true;
+            this.alreadyuser.Click += new System.EventHandler(this.alreadyuser_Click);
             // 
             // newuser
             // 
@@ -71,7 +72,7 @@ namespace cocosubbetaversion
             this.newuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.newuser.ForeColor = System.Drawing.Color.White;
             this.newuser.Location = new System.Drawing.Point(533, 630);
-            this.newuser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.newuser.Margin = new System.Windows.Forms.Padding(2);
             this.newuser.Name = "newuser";
             this.newuser.Size = new System.Drawing.Size(192, 29);
             this.newuser.TabIndex = 1;
@@ -93,12 +94,13 @@ namespace cocosubbetaversion
             this.exit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Location = new System.Drawing.Point(792, 45);
-            this.exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exit.Margin = new System.Windows.Forms.Padding(2);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(103, 36);
             this.exit.TabIndex = 2;
             this.exit.Text = "Exit";
             this.exit.UseTransparentBackground = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // guna2Button1
             // 
@@ -114,7 +116,7 @@ namespace cocosubbetaversion
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(899, 45);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(32, 36);
             this.guna2Button1.TabIndex = 3;
@@ -132,7 +134,7 @@ namespace cocosubbetaversion
             this.Controls.Add(this.exit);
             this.Controls.Add(this.newuser);
             this.Controls.Add(this.alreadyuser);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "welcomepage";
             this.Text = "welcomepage";
             this.ResumeLayout(false);

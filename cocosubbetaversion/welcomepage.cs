@@ -19,7 +19,21 @@ namespace cocosubbetaversion
 
         private void newuser_Click(object sender, EventArgs e)
         {
+            signup signupForm = new signup();
+            signupForm.Show();
+            this.Hide();
+        }
 
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void alreadyuser_Click(object sender, EventArgs e)
+        {
+            loginPage loginForm = new loginPage();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }
