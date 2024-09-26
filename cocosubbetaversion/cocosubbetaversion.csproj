@@ -64,6 +64,13 @@
     <Compile Include="forgot_page.Designer.cs">
       <DependentUpon>forgot_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="sub_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>sub_dashboard.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="loginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub_dashboard.resx">
+      <DependentUpon>sub_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sub_plan.resx">
       <DependentUpon>sub_plan.cs</DependentUpon>
@@ -182,6 +192,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2831%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

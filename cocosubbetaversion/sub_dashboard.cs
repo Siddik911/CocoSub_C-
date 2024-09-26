@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cocosubbetaversion
 {
-    public partial class Form1 : Form
+    public partial class sub_dash : Form
     {
-        public Form1()
+        public sub_dash()
         {
             InitializeComponent();
         }
