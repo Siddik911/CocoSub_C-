@@ -298,6 +298,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__27_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
@@ -315,6 +316,7 @@
             this.Controls.Add(this.Phone_number_text);
             this.Controls.Add(this.Email_text);
             this.Controls.Add(this.fullname_text);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "checkout_page";
             this.Text = "checkout_page";

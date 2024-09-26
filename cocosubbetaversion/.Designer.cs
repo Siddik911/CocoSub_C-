@@ -121,9 +121,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(362, 524);
+            this.guna2Button1.Location = new System.Drawing.Point(366, 519);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(249, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(242, 45);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "REDEEM NOW";
             // 
@@ -143,10 +143,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(788, 634);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(791, 631);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(171, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(220, 25);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cancel your subcription";
@@ -170,6 +170,7 @@
             this.DoubleBuffered = true;
             this.Name = "sub_dash";
             this.Text = "sub_dash_board";
+            this.Load += new System.EventHandler(this.sub_dash_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

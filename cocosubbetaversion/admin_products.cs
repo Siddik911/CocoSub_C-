@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace cocosubbetaversion
 {
-    public partial class sub_dash : Form
+    public partial class admin_products : Form
     {
-        public sub_dash()
+        public admin_products()
         {
             InitializeComponent();
-        }
-
-        private void sub_dash_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

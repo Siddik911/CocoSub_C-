@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace cocosubbetaversion
 {
-    public partial class sub_dash : Form
+    public partial class admin_order : Form
     {
-        public sub_dash()
+        public admin_order()
         {
             InitializeComponent();
         }
 
-        private void sub_dash_Load(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)
         {
 
         }

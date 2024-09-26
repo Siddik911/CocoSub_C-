@@ -41,7 +41,7 @@
             this.drink_list.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.drink_list.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.drink_list.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.drink_list.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.drink_list.ForeColor = System.Drawing.Color.Black;
             this.drink_list.ItemHeight = 30;
             this.drink_list.Location = new System.Drawing.Point(75, 298);
             this.drink_list.Name = "drink_list";
@@ -59,6 +59,7 @@
             this.special_instraction.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.special_instraction.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.special_instraction.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.special_instraction.ForeColor = System.Drawing.Color.Black;
             this.special_instraction.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.special_instraction.Location = new System.Drawing.Point(75, 390);
             this.special_instraction.Name = "special_instraction";

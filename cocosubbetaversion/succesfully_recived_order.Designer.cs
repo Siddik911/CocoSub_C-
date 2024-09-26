@@ -55,8 +55,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__33_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.GO_HOMRPAGE_BUTTON);
+            this.DoubleBuffered = true;
             this.Name = "succesfully_recived_order";
             this.Text = "succesfully_recived_order";
             this.ResumeLayout(false);

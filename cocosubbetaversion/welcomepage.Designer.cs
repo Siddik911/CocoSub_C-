@@ -41,7 +41,7 @@ namespace cocosubbetaversion
             this.alreadyuser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.alreadyuser.AutoRoundedCorners = true;
             this.alreadyuser.BackColor = System.Drawing.Color.Transparent;
-            this.alreadyuser.BorderRadius = 13;
+            this.alreadyuser.BorderRadius = 18;
             this.alreadyuser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.alreadyuser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.alreadyuser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -49,10 +49,10 @@ namespace cocosubbetaversion
             this.alreadyuser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.alreadyuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.alreadyuser.ForeColor = System.Drawing.Color.White;
-            this.alreadyuser.Location = new System.Drawing.Point(282, 630);
+            this.alreadyuser.Location = new System.Drawing.Point(296, 630);
             this.alreadyuser.Margin = new System.Windows.Forms.Padding(2);
             this.alreadyuser.Name = "alreadyuser";
-            this.alreadyuser.Size = new System.Drawing.Size(214, 29);
+            this.alreadyuser.Size = new System.Drawing.Size(214, 39);
             this.alreadyuser.TabIndex = 0;
             this.alreadyuser.Text = "Already an user ";
             this.alreadyuser.UseTransparentBackground = true;
@@ -63,7 +63,7 @@ namespace cocosubbetaversion
             this.newuser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.newuser.AutoRoundedCorners = true;
             this.newuser.BackColor = System.Drawing.Color.Transparent;
-            this.newuser.BorderRadius = 13;
+            this.newuser.BorderRadius = 18;
             this.newuser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.newuser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.newuser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -71,10 +71,10 @@ namespace cocosubbetaversion
             this.newuser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.newuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.newuser.ForeColor = System.Drawing.Color.White;
-            this.newuser.Location = new System.Drawing.Point(533, 630);
+            this.newuser.Location = new System.Drawing.Point(550, 630);
             this.newuser.Margin = new System.Windows.Forms.Padding(2);
             this.newuser.Name = "newuser";
-            this.newuser.Size = new System.Drawing.Size(192, 29);
+            this.newuser.Size = new System.Drawing.Size(214, 39);
             this.newuser.TabIndex = 1;
             this.newuser.Text = "New User";
             this.newuser.UseTransparentBackground = true;
@@ -93,7 +93,7 @@ namespace cocosubbetaversion
             this.exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.exit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(792, 45);
+            this.exit.Location = new System.Drawing.Point(858, 45);
             this.exit.Margin = new System.Windows.Forms.Padding(2);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(103, 36);
@@ -115,7 +115,7 @@ namespace cocosubbetaversion
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(899, 45);
+            this.guna2Button1.Location = new System.Drawing.Point(965, 45);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(32, 36);

@@ -52,6 +52,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_order.Designer.cs">
+      <DependentUpon>admin_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_payment.Designer.cs">
+      <DependentUpon>admin_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_products.Designer.cs">
+      <DependentUpon>admin_products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_users.Designer.cs">
+      <DependentUpon>admin_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkout_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +145,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin_order.resx">
+      <DependentUpon>admin_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_payment.resx">
+      <DependentUpon>admin_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_products.resx">
+      <DependentUpon>admin_products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_users.resx">
+      <DependentUpon>admin_users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="checkout_page.resx">
       <DependentUpon>checkout_page.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +258,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2834%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
