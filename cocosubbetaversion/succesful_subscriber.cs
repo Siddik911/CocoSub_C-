@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace cocosubbetaversion
 {
-    public partial class payment_details : Form
+    public partial class succesful_subscriber : Form
     {
-        public payment_details()
+        public succesful_subscriber()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

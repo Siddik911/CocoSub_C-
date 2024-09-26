@@ -82,6 +82,12 @@
     <Compile Include="sub_plan.Designer.cs">
       <DependentUpon>sub_plan.cs</DependentUpon>
     </Compile>
+    <Compile Include="succesful_subscriber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="succesful_subscriber.Designer.cs">
+      <DependentUpon>succesful_subscriber.cs</DependentUpon>
+    </Compile>
     <Compile Include="welcomepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sub_plan.resx">
       <DependentUpon>sub_plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="succesful_subscriber.resx">
+      <DependentUpon>succesful_subscriber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomepage.resx">
       <DependentUpon>welcomepage.cs</DependentUpon>
@@ -170,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2829%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

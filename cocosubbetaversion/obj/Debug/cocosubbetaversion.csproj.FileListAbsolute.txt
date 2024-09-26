@@ -48,3 +48,5 @@ C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetav
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
 C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb
+C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.payment_details.resources
+C:\Users\Lapshop BD\Desktop\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.succesful_subscriber.resources
