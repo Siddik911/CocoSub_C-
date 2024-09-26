@@ -71,3 +71,23 @@ C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetav
 C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
 C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
 C:\Users\rafid\OneDrive - student.mtsac.edu\Desktop\Coco\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe.config
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\bin\Debug\cocosubbetaversion.pdb
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\bin\Debug\Guna.UI2.dll
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.AssemblyReference.cache
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.checkout_page.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.forgot_page.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.loginPage.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.payment_details.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.signup.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_dash.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_plan.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.succesful_subscriber.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.welcomepage.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.Properties.Resources.resources
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.GenerateResource.cache
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.CoreCompileInputs.cache
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
+C:\Users\HASANSIDDIKI\Desktop\proj\CocoSub_C-\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb
