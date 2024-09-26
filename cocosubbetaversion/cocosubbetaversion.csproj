@@ -121,6 +121,12 @@
     <Compile Include="forgot_page.Designer.cs">
       <DependentUpon>forgot_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="redeem_credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redeem_credit.Designer.cs">
+      <DependentUpon>redeem_credit.cs</DependentUpon>
+    </Compile>
     <Compile Include="sub_dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="sub_plan.Designer.cs">
       <DependentUpon>sub_plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="succesfully_recived_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="succesfully_recived_order.Designer.cs">
+      <DependentUpon>succesfully_recived_order.cs</DependentUpon>
     </Compile>
     <Compile Include="succesful_subscriber.cs">
       <SubType>Form</SubType>
@@ -178,6 +190,9 @@
     <EmbeddedResource Include="payment_details.resx">
       <DependentUpon>payment_details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="redeem_credit.resx">
+      <DependentUpon>redeem_credit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sub_plan.resx">
       <DependentUpon>sub_plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="succesfully_recived_order.resx">
+      <DependentUpon>succesfully_recived_order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="succesful_subscriber.resx">
       <DependentUpon>succesful_subscriber.cs</DependentUpon>
@@ -255,6 +273,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2833%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

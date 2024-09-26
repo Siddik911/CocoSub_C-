@@ -65,7 +65,7 @@ namespace cocosubbetaversion
             this.nametext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nametext.AutoRoundedCorners = true;
             this.nametext.BackColor = System.Drawing.Color.Transparent;
-            this.nametext.BorderRadius = 12;
+            this.nametext.BorderRadius = 17;
             this.nametext.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nametext.DefaultText = "";
             this.nametext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -74,14 +74,14 @@ namespace cocosubbetaversion
             this.nametext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.nametext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nametext.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nametext.ForeColor = System.Drawing.Color.Transparent;
+            this.nametext.ForeColor = System.Drawing.Color.Black;
             this.nametext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nametext.Location = new System.Drawing.Point(558, 322);
             this.nametext.Name = "nametext";
             this.nametext.PasswordChar = '\0';
             this.nametext.PlaceholderText = "";
             this.nametext.SelectedText = "";
-            this.nametext.Size = new System.Drawing.Size(280, 27);
+            this.nametext.Size = new System.Drawing.Size(280, 36);
             this.nametext.TabIndex = 1;
             this.nametext.TextChanged += new System.EventHandler(this.nametext_TextChanged);
             // 
@@ -90,7 +90,7 @@ namespace cocosubbetaversion
             this.emailtext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.emailtext.AutoRoundedCorners = true;
             this.emailtext.BackColor = System.Drawing.Color.Transparent;
-            this.emailtext.BorderRadius = 10;
+            this.emailtext.BorderRadius = 15;
             this.emailtext.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailtext.DefaultText = "";
             this.emailtext.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -101,12 +101,12 @@ namespace cocosubbetaversion
             this.emailtext.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailtext.ForeColor = System.Drawing.Color.Transparent;
             this.emailtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailtext.Location = new System.Drawing.Point(558, 404);
+            this.emailtext.Location = new System.Drawing.Point(558, 398);
             this.emailtext.Name = "emailtext";
             this.emailtext.PasswordChar = '\0';
             this.emailtext.PlaceholderText = "";
             this.emailtext.SelectedText = "";
-            this.emailtext.Size = new System.Drawing.Size(280, 23);
+            this.emailtext.Size = new System.Drawing.Size(280, 33);
             this.emailtext.TabIndex = 3;
             this.emailtext.TextChanged += new System.EventHandler(this.emailtext_TextChanged);
             // 
