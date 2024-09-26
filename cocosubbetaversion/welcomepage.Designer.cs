@@ -116,13 +116,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__17_;
-            this.ClientSize = new System.Drawing.Size(1002, 712);
+            this.ClientSize = new System.Drawing.Size(778, 744);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.newuser);
             this.Controls.Add(this.alreadyuser);
             this.Name = "welcomepage";
             this.Text = "welcomepage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace cocosubbetaversion
 {
-    public partial class forgot_page : Form
+    public partial class checkout_page : Form
     {
-        public forgot_page()
+        public checkout_page()
         {
             InitializeComponent();
-        }
-
-        private void showcheck_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forgot_email_text_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

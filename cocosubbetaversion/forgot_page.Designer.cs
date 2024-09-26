@@ -57,6 +57,7 @@
             this.forgot_email_text.SelectedText = "";
             this.forgot_email_text.Size = new System.Drawing.Size(286, 36);
             this.forgot_email_text.TabIndex = 0;
+            this.forgot_email_text.TextChanged += new System.EventHandler(this.forgot_email_text_TextChanged);
             // 
             // guna2TextBox1
             // 

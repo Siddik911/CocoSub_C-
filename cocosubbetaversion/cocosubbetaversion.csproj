@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="checkout_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkout_page.Designer.cs">
+      <DependentUpon>checkout_page.cs</DependentUpon>
+    </Compile>
     <Compile Include="forgot_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="checkout_page.resx">
+      <DependentUpon>checkout_page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forgot_page.resx">
       <DependentUpon>forgot_page.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2823%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
