@@ -1,4 +1,6 @@
-﻿namespace cocosubbetaversion
+﻿using System.Windows.Forms;
+
+namespace cocosubbetaversion
 {
     partial class welcomepage
     {
@@ -36,6 +38,7 @@
             // 
             // alreadyuser
             // 
+            this.alreadyuser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.alreadyuser.AutoRoundedCorners = true;
             this.alreadyuser.BackColor = System.Drawing.Color.Transparent;
             this.alreadyuser.BorderRadius = 21;
@@ -46,7 +49,7 @@
             this.alreadyuser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.alreadyuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.alreadyuser.ForeColor = System.Drawing.Color.White;
-            this.alreadyuser.Location = new System.Drawing.Point(298, 639);
+            this.alreadyuser.Location = new System.Drawing.Point(298, 607);
             this.alreadyuser.Name = "alreadyuser";
             this.alreadyuser.Size = new System.Drawing.Size(190, 45);
             this.alreadyuser.TabIndex = 0;
@@ -55,6 +58,7 @@
             // 
             // newuser
             // 
+            this.newuser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.newuser.AutoRoundedCorners = true;
             this.newuser.BackColor = System.Drawing.Color.Transparent;
             this.newuser.BorderRadius = 21;
@@ -65,7 +69,7 @@
             this.newuser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.newuser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.newuser.ForeColor = System.Drawing.Color.White;
-            this.newuser.Location = new System.Drawing.Point(539, 639);
+            this.newuser.Location = new System.Drawing.Point(530, 607);
             this.newuser.Name = "newuser";
             this.newuser.Size = new System.Drawing.Size(190, 45);
             this.newuser.TabIndex = 1;
@@ -75,6 +79,7 @@
             // 
             // exit
             // 
+            this.exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.exit.AutoRoundedCorners = true;
             this.exit.BackColor = System.Drawing.Color.Transparent;
             this.exit.BorderRadius = 17;
@@ -85,7 +90,7 @@
             this.exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.exit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(813, 69);
+            this.exit.Location = new System.Drawing.Point(804, 69);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(108, 37);
             this.exit.TabIndex = 2;
@@ -94,6 +99,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderRadius = 17;
@@ -104,7 +110,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(2)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(927, 69);
+            this.guna2Button1.Location = new System.Drawing.Point(918, 69);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(38, 37);
             this.guna2Button1.TabIndex = 3;
@@ -116,14 +122,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__17_;
-            this.ClientSize = new System.Drawing.Size(778, 744);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1002, 712);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.newuser);
             this.Controls.Add(this.alreadyuser);
             this.Name = "welcomepage";
             this.Text = "welcomepage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
@@ -136,4 +142,3 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
-
