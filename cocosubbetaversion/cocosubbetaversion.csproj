@@ -54,9 +54,21 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.0.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
+=======
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.0.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.3.7\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+>>>>>>> fdf38dff2e18b65fc0ffcff950900f03c33c69c3
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -115,6 +127,12 @@
     <Compile Include="forgot_page.Designer.cs">
       <DependentUpon>forgot_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="redeem_credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redeem_credit.Designer.cs">
+      <DependentUpon>redeem_credit.cs</DependentUpon>
+    </Compile>
     <Compile Include="sub_dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +157,12 @@
     </Compile>
     <Compile Include="sub_plan.Designer.cs">
       <DependentUpon>sub_plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="succesfully_recived_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="succesfully_recived_order.Designer.cs">
+      <DependentUpon>succesfully_recived_order.cs</DependentUpon>
     </Compile>
     <Compile Include="succesful_subscriber.cs">
       <SubType>Form</SubType>
@@ -172,6 +196,9 @@
     <EmbeddedResource Include="payment_details.resx">
       <DependentUpon>payment_details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="redeem_credit.resx">
+      <DependentUpon>redeem_credit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sub_plan.resx">
       <DependentUpon>sub_plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="succesfully_recived_order.resx">
+      <DependentUpon>succesfully_recived_order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="succesful_subscriber.resx">
       <DependentUpon>succesful_subscriber.cs</DependentUpon>
@@ -249,6 +279,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2833%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
