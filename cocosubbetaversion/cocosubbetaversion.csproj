@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forgot_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgot_page.Designer.cs">
+      <DependentUpon>forgot_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sub_plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub_plan.Designer.cs">
+      <DependentUpon>sub_plan.cs</DependentUpon>
+    </Compile>
     <Compile Include="welcomepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forgot_page.resx">
+      <DependentUpon>forgot_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub_plan.resx">
+      <DependentUpon>sub_plan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomepage.resx">
       <DependentUpon>welcomepage.cs</DependentUpon>
@@ -101,6 +128,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2822%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

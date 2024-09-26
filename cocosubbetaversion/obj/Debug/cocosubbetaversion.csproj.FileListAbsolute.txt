@@ -1,0 +1,16 @@
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe.config
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\bin\Debug\cocosubbetaversion.exe
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\bin\Debug\cocosubbetaversion.pdb
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\bin\Debug\Guna.UI2.dll
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.AssemblyReference.cache
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.forgot_page.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.loginPage.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.signup.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.sub_plan.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.welcomepage.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.Properties.Resources.resources
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.GenerateResource.cache
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.csproj.CoreCompileInputs.cache
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubb.D26B65D0.Up2Date
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.exe
+C:\Users\Lapshop BD\source\repos\cocosubbetaversion\cocosubbetaversion\obj\Debug\cocosubbetaversion.pdb

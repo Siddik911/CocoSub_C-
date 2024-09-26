@@ -16,5 +16,10 @@ namespace cocosubbetaversion
         {
             InitializeComponent();
         }
+
+        private void showcheck_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
