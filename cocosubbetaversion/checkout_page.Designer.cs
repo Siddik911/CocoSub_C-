@@ -32,10 +32,11 @@
             // 
             // checkout_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__23_;
-            this.ClientSize = new System.Drawing.Size(1004, 712);
+            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__24_;
+            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "checkout_page";
             this.Text = "checkout_page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

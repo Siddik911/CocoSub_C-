@@ -16,7 +16,7 @@ namespace cocosubbetaversion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new forgot_page());
+            Application.Run(new signup());
         }
     }
 }
