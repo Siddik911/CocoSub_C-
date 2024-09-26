@@ -40,6 +40,7 @@
             // name_on_card_text
             // 
             this.name_on_card_text.AutoRoundedCorners = true;
+            this.name_on_card_text.BackColor = System.Drawing.Color.Transparent;
             this.name_on_card_text.BorderColor = System.Drawing.Color.Transparent;
             this.name_on_card_text.BorderRadius = 19;
             this.name_on_card_text.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -50,6 +51,7 @@
             this.name_on_card_text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.name_on_card_text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_on_card_text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.name_on_card_text.ForeColor = System.Drawing.Color.Black;
             this.name_on_card_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_on_card_text.Location = new System.Drawing.Point(62, 262);
             this.name_on_card_text.Name = "name_on_card_text";
@@ -62,6 +64,7 @@
             // cardNo_text
             // 
             this.cardNo_text.AutoRoundedCorners = true;
+            this.cardNo_text.BackColor = System.Drawing.Color.Transparent;
             this.cardNo_text.BorderColor = System.Drawing.Color.Transparent;
             this.cardNo_text.BorderRadius = 19;
             this.cardNo_text.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -72,6 +75,7 @@
             this.cardNo_text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.cardNo_text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cardNo_text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cardNo_text.ForeColor = System.Drawing.Color.Black;
             this.cardNo_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cardNo_text.Location = new System.Drawing.Point(62, 368);
             this.cardNo_text.Name = "cardNo_text";
@@ -84,6 +88,7 @@
             // expiry_text
             // 
             this.expiry_text.AutoRoundedCorners = true;
+            this.expiry_text.BackColor = System.Drawing.Color.Transparent;
             this.expiry_text.BorderColor = System.Drawing.Color.Transparent;
             this.expiry_text.BorderRadius = 19;
             this.expiry_text.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -94,6 +99,7 @@
             this.expiry_text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.expiry_text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.expiry_text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.expiry_text.ForeColor = System.Drawing.Color.Black;
             this.expiry_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.expiry_text.Location = new System.Drawing.Point(62, 477);
             this.expiry_text.Name = "expiry_text";
@@ -106,6 +112,7 @@
             // cvv_text
             // 
             this.cvv_text.AutoRoundedCorners = true;
+            this.cvv_text.BackColor = System.Drawing.Color.Transparent;
             this.cvv_text.BorderColor = System.Drawing.Color.Transparent;
             this.cvv_text.BorderRadius = 19;
             this.cvv_text.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -116,6 +123,7 @@
             this.cvv_text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.cvv_text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cvv_text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cvv_text.ForeColor = System.Drawing.Color.Black;
             this.cvv_text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cvv_text.Location = new System.Drawing.Point(343, 477);
             this.cvv_text.Name = "cvv_text";
