@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace cocosubbetaversion
 {
     public partial class sub_plan : Form
     {
-        private int menu_id_num; // Declare a private field to store the menu_id
+        private readonly string connectionString = "Server=192.168.0.121;Database=cocodb;Uid=rafid;Pwd=admin;";
 
         public sub_plan()
         {
@@ -21,45 +16,65 @@ namespace cocosubbetaversion
 
         private void plan_ent_button_Click(object sender, EventArgs e)
         {
-            menu_id_num = 1; // Assign the menu_id value to the field
-            
-           
-            SubPlanSession(menu_id_num); // Call the method to set the session value
-
-            checkout_page checkout_PageForm = new checkout_page();
-            checkout_PageForm.ShowDialog();
-
-            this.Hide();
+            HandlePlanSelection(1);
         }
 
         private void plan_lover_button_Click(object sender, EventArgs e)
         {
-            menu_id_num = 2; // Assign the menu_id value to the field
-
-            SubPlanSession(menu_id_num); // Call the method to set the session value
-
-            checkout_page checkout_PageForm = new checkout_page();
-            checkout_PageForm.ShowDialog();
-
-
-            this.Hide();
+            HandlePlanSelection(2);
         }
 
         private void plan_com_button_Click(object sender, EventArgs e)
         {
-            menu_id_num = 3; // Assign the menu_id value to the field
-            SubPlanSession(menu_id_num); // Call the method to set the session value
-
-            checkout_page checkout_PageForm = new checkout_page();
-            checkout_PageForm.ShowDialog();
-
-            this.Hide();
+            HandlePlanSelection(3);
         }
 
-        private void SubPlanSession(int menu_id_num)
+        // Fetch menu details from the database and pass them to checkout_page
+        private void HandlePlanSelection(int menuId)
         {
-            // Assuming userName and email are obtained after successful login/signup
-            SessionManager.menu_id = menu_id_num;
+            var menuDetails = GetMenuDetails(menuId);
+
+            if (menuDetails != null)
+            {
+                checkout_page checkoutPageForm = new checkout_page(menuDetails.Value.menuName, menuDetails.Value.price);
+                checkoutPageForm.ShowDialog();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error fetching menu details.");
+            }
+        }
+
+        // Pure function to fetch menu details from the database
+        private (string menuName, decimal price)? GetMenuDetails(int menuId)
+        {
+            string query = "SELECT menu_name, price FROM menu WHERE menu_id = @menuId";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@menuId", menuId);
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string menuName = reader.GetString("menu_name");
+                                decimal price = reader.GetDecimal("price");
+                                return (menuName, price);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching data: " + ex.Message);
+                }
+            }
+            return null;
         }
     }
 }

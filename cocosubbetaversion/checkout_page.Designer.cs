@@ -195,7 +195,7 @@
             this.sub_label.Size = new System.Drawing.Size(130, 37);
             this.sub_label.TabIndex = 8;
             this.sub_label.Text = "Sub Total";
-            this.sub_label.Click += new System.EventHandler(this.label4_Click);
+            // this.sub_label.Click += new System.EventHandler(this.label4_Click);
             // 
             // discount_label
             // 
