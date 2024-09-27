@@ -88,7 +88,7 @@ namespace cocosubbetaversion
             this.login_pass_text.SelectedText = "";
             this.login_pass_text.Size = new System.Drawing.Size(318, 49);
             this.login_pass_text.TabIndex = 1;
-            this.login_pass_text.UseSystemPasswordChar = true;
+            this.login_pass_text.UseSystemPasswordChar = false;
             this.login_pass_text.TextChanged += new System.EventHandler(this.login_pass_text_TextChanged);
             // 
             // checkBox1

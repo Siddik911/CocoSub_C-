@@ -1,0 +1,3 @@
+1 fix text writing side. dan pash theke lekha shuru hoy in sing up and login page
+2 sub plan page boro korle ba size change korle button shore jacche
+3 Login page e name er jagay email dite hobe

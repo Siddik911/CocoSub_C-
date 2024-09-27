@@ -9,12 +9,15 @@ namespace cocosubbetaversion
         // Connection string to your MySQL database
         string connectionString = "Server=localhost;Database=cocodb;Uid=root;Pwd=admin;";
 
+        // Variable to store the role based on the checkbox state
+        int role = 0;
+
         public signup()
         {
             InitializeComponent();
         }
 
-        // Event for when the signup button is clicked
+        // After successful sign up, open a new form named sub_plan
         private void signup_Click(object sender, EventArgs e)
         {
             // Retrieve user inputs from text boxes
@@ -62,7 +65,26 @@ namespace cocosubbetaversion
                     command.Parameters.AddWithValue("@password", password);
                     command.ExecuteNonQuery();
 
+                    // Retrieve the last added User_id
+                    string selectQuery = "SELECT MAX(User_id) FROM user";
+                    MySqlCommand selectCommand = new MySqlCommand(selectQuery, connection);
+                    int userId = Convert.ToInt32(selectCommand.ExecuteScalar());
+
+                    // Update the user table column Role of the last added User_id based on the checkbox
+                    string updateQuery = "UPDATE user SET Role = @role WHERE User_id = @userId";
+                    MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection);
+                    updateCommand.Parameters.AddWithValue("@role", role);
+                    updateCommand.Parameters.AddWithValue("@userId", userId);
+                    updateCommand.ExecuteNonQuery();
+
+                    SignupUser(name, email);
+
                     MessageBox.Show("User registered successfully!");
+
+                    // Open the sub_plan form
+                    sub_plan subPlanForm = new sub_plan();
+                    subPlanForm.Show();
+                    this.Hide();
                 }
                 catch (Exception ex)
                 {
@@ -96,10 +118,23 @@ namespace cocosubbetaversion
             string name = textBox.Text;
         }
 
-        // Checkbox event handler for password visibility toggle
+        // Checkbox event handler for password visibility toggle and role assignment
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox checkBox = (CheckBox)sender;
+            // If checkbox is checked, set role to 1, otherwise set to 0
+            role = checkBox.Checked ? 1 : 0;
+        }
+        private void SignupUser(string userName, string email)
+        {
+            // Assuming userName and email are obtained after successful login/signup
+            SessionManager.UserName = userName;
+            SessionManager.Email = email;
+
+            //// Optionally, navigate to the main form
+            //var mainForm = new MainForm();
+            //mainForm.Show();
+            //this.Hide();
         }
     }
 }

@@ -51,6 +51,7 @@
             this.plan_ent_button.Size = new System.Drawing.Size(204, 50);
             this.plan_ent_button.TabIndex = 0;
             this.plan_ent_button.Text = "Start For 30 Days";
+            this.plan_ent_button.Click += new System.EventHandler(this.plan_ent_button_Click);
             // 
             // plan_lover_button
             // 
@@ -70,6 +71,7 @@
             this.plan_lover_button.Size = new System.Drawing.Size(204, 50);
             this.plan_lover_button.TabIndex = 3;
             this.plan_lover_button.Text = "Start For 30 Days";
+            this.plan_lover_button.Click += new System.EventHandler(this.plan_lover_button_Click);
             // 
             // plan_com_button
             // 
@@ -89,6 +91,7 @@
             this.plan_com_button.Size = new System.Drawing.Size(204, 50);
             this.plan_com_button.TabIndex = 4;
             this.plan_com_button.Text = "Start For 30 Days";
+            this.plan_com_button.Click += new System.EventHandler(this.plan_com_button_Click);
             // 
             // sub_plan
             // 

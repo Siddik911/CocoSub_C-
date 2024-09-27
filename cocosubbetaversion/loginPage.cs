@@ -40,6 +40,10 @@ namespace cocosubbetaversion
                 sub_dash dashboard = new sub_dash();
                 this.Hide();  // Hide the login page
                 dashboard.Show();  // Show the sub_dash form
+
+                // Assuming userName is retrieved from the database after successful login
+                string userName = "User"; // Replace with actual userName retrieval logic
+                LoginUser(userName, email);
             }
             else
             {
@@ -91,8 +95,20 @@ namespace cocosubbetaversion
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            // If you want to implement "show password" functionality, you can do it here
-            login_pass_text.UseSystemPasswordChar = !checkBox1.Checked;
+            // Toggle password visibility based on checkbox state
+            login_pass_text.PasswordChar = checkBox1.Checked ? '\0' : '*';
+        }
+
+        private void LoginUser(string userName, string email)
+        {
+            // Assuming userName and email are obtained after successful login/signup
+            SessionManager.UserName = userName;
+            SessionManager.Email = email;
+
+            //// Optionally, navigate to the main form
+            //var mainForm = new MainForm();
+            //mainForm.Show();
+            //this.Hide();
         }
     }
 }
