@@ -67,6 +67,7 @@
             this.fullname_text.SelectedText = "";
             this.fullname_text.Size = new System.Drawing.Size(450, 51);
             this.fullname_text.TabIndex = 0;
+            this.fullname_text.TextChanged += new System.EventHandler(this.fullname_text_TextChanged);
             // 
             // Email_text
             // 
@@ -89,6 +90,7 @@
             this.Email_text.SelectedText = "";
             this.Email_text.Size = new System.Drawing.Size(450, 51);
             this.Email_text.TabIndex = 1;
+            this.Email_text.TextChanged += new System.EventHandler(this.Email_text_TextChanged);
             // 
             // Phone_number_text
             // 
@@ -111,6 +113,7 @@
             this.Phone_number_text.SelectedText = "";
             this.Phone_number_text.Size = new System.Drawing.Size(450, 51);
             this.Phone_number_text.TabIndex = 2;
+            this.Phone_number_text.TextChanged += new System.EventHandler(this.Phone_number_text_TextChanged);
             // 
             // adress_text
             // 
@@ -133,9 +136,11 @@
             this.adress_text.SelectedText = "";
             this.adress_text.Size = new System.Drawing.Size(450, 50);
             this.adress_text.TabIndex = 3;
+            this.adress_text.TextChanged += new System.EventHandler(this.adress_text_TextChanged);
             // 
             // sub_plan_name
             // 
+<<<<<<< HEAD
             this.sub_plan_name.AutoSize = true;
             this.sub_plan_name.BackColor = System.Drawing.Color.Transparent;
             this.sub_plan_name.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,6 +150,17 @@
             this.sub_plan_name.TabIndex = 4;
             this.sub_plan_name.Text = "Coffe Lover ";
             this.sub_plan_name.Click += new System.EventHandler(this.label1_Click);
+=======
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(610, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 37);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Coffe Lover ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
             // 
             // sub_cost
             // 

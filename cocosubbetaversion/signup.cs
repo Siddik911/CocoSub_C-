@@ -82,8 +82,9 @@ namespace cocosubbetaversion
                     MessageBox.Show("User registered successfully!");
 
                     // Open the sub_plan form
-                    sub_plan subPlanForm = new sub_plan();
-                    subPlanForm.Show();
+                    checkout_page checkout_PageForm = new checkout_page();
+                    checkout_PageForm.Show();
+
                     this.Hide();
                 }
                 catch (Exception ex)

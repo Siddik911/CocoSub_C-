@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.hi_label = new System.Windows.Forms.Label();
+=======
+            this.hi_name = new System.Windows.Forms.Label();
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
             this.label1 = new System.Windows.Forms.Label();
             this.credit_left_label = new System.Windows.Forms.Label();
             this.sub_plan_name = new System.Windows.Forms.Label();
@@ -45,6 +49,7 @@
             // 
             // hi_label
             // 
+<<<<<<< HEAD
             this.hi_label.AutoSize = true;
             this.hi_label.BackColor = System.Drawing.Color.Transparent;
             this.hi_label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -54,6 +59,16 @@
             this.hi_label.Size = new System.Drawing.Size(135, 47);
             this.hi_label.TabIndex = 0;
             this.hi_label.Text = "HELLO,";
+=======
+            this.hi_name.AutoSize = true;
+            this.hi_name.BackColor = System.Drawing.Color.Transparent;
+            this.hi_name.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hi_name.Location = new System.Drawing.Point(358, 20);
+            this.hi_name.Name = "hi_name";
+            this.hi_name.Size = new System.Drawing.Size(259, 47);
+            this.hi_name.TabIndex = 0;
+            this.hi_name.Text = "HELLO,RAFID !";
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
             // 
             // label1
             // 
@@ -231,7 +246,11 @@
             this.Controls.Add(this.sub_plan_name);
             this.Controls.Add(this.credit_left_label);
             this.Controls.Add(this.label1);
+<<<<<<< HEAD
             this.Controls.Add(this.hi_label);
+=======
+            this.Controls.Add(this.hi_name);
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -245,7 +264,11 @@
 
         #endregion
 
+<<<<<<< HEAD
         private System.Windows.Forms.Label hi_label;
+=======
+        private System.Windows.Forms.Label hi_name;
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label credit_left_label;
         private System.Windows.Forms.Label sub_plan_name;

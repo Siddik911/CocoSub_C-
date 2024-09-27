@@ -12,6 +12,7 @@ namespace cocosubbetaversion
 {
     public partial class checkout_page : Form
     {
+
         public checkout_page()
         {
             InitializeComponent();
@@ -32,6 +33,29 @@ namespace cocosubbetaversion
 
         }
 
+<<<<<<< HEAD
+=======
+        private void fullname_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Phone_number_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adress_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
         private void label1_Click(object sender, EventArgs e)
         {
 
