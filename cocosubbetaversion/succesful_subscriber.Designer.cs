@@ -56,6 +56,8 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__29_;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.redeem_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "succesful_subscriber";
             this.Text = "succesful_subscriber";
             this.ResumeLayout(false);

@@ -52,6 +52,7 @@
             this.user_button.TabIndex = 0;
             this.user_button.Text = "USERS";
             this.user_button.UseTransparentBackground = true;
+            this.user_button.Click += new System.EventHandler(this.user_button_Click);
             // 
             // order_button
             // 
@@ -110,6 +111,7 @@
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
+            this.payment_button.Click += new System.EventHandler(this.payment_button_Click);
             // 
             // admin_order
             // 
@@ -123,6 +125,8 @@
             this.Controls.Add(this.order_button);
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "admin_order";
             this.Text = "admin_order";
             this.ResumeLayout(false);

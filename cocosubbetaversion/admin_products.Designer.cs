@@ -54,6 +54,7 @@
             this.user_button.TabIndex = 0;
             this.user_button.Text = "USERS";
             this.user_button.UseTransparentBackground = true;
+            this.user_button.Click += new System.EventHandler(this.user_button_Click);
             // 
             // order_butoon
             // 
@@ -73,6 +74,7 @@
             this.order_butoon.TabIndex = 1;
             this.order_butoon.Text = "ORDERS";
             this.order_butoon.UseTransparentBackground = true;
+            this.order_butoon.Click += new System.EventHandler(this.order_butoon_Click);
             // 
             // products_button
             // 
@@ -111,16 +113,10 @@
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(279, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 435);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
+
+
+
+
             // admin_products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +130,8 @@
             this.Controls.Add(this.order_butoon);
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "admin_products";
             this.Text = "admin_products";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

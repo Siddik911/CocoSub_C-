@@ -19,7 +19,24 @@ namespace cocosubbetaversion
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            // Products button
+            admin_products form = new admin_products();
+            form.Show();
+            this.Hide();
+        }
 
+        private void user_button_Click(object sender, EventArgs e)
+        {
+            admin_users form = new admin_users();
+            form.Show();
+            this.Hide();
+        }
+
+        private void payment_button_Click(object sender, EventArgs e)
+        {
+            admin_payment form = new admin_payment();
+            form.Show();
+            this.Hide();
         }
     }
 }

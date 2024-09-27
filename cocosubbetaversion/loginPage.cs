@@ -33,24 +33,34 @@ namespace cocosubbetaversion
                 return;
             }
 
-            // Call the method to check login credentials and subscription status
-            int? isSubbed = ValidateLoginAndSubscription(email, password);
-
-            if (isSubbed.HasValue)
+            // Call the method to check login credentials and handle redirection
+            var loginResult = ValidateLogin(email, password);
+            if (loginResult.isValid)
             {
-                if (isSubbed.Value == 1)
+                // Redirect based on the role and subscription status
+                if (loginResult.role == 1)
                 {
-                    // Redirect to the sub_dash form if the user is subscribed
-                    sub_dash dashboard = new sub_dash();
-                    this.Hide();  // Hide the login page
-                    dashboard.Show();  // Show the sub_dash form
+                    // Redirect to admin dashboard
+                    admin_users adminDashboard = new admin_users();
+                    this.Hide();
+                    adminDashboard.Show();
                 }
                 else
                 {
-                    // Redirect to the sub_plan form if the user is not subscribed
-                    sub_plan subscriptionPlan = new sub_plan();
-                    this.Hide();  // Hide the login page
-                    subscriptionPlan.Show();  // Show the sub_plan form
+                    if (loginResult.isSubbed == 1)
+                    {
+                        // Redirect to subscription dashboard
+                        sub_dash dashboard = new sub_dash();
+                        this.Hide();
+                        dashboard.Show();
+                    }
+                    else
+                    {
+                        // Redirect to subscription plan page
+                        sub_plan subscriptionPlan = new sub_plan();
+                        this.Hide();
+                        subscriptionPlan.Show();
+                    }
                 }
 
                 // Assuming userName is retrieved from the database after successful login
@@ -63,11 +73,11 @@ namespace cocosubbetaversion
             }
         }
 
-        // Method to validate login credentials and check subscription status
-        private int? ValidateLoginAndSubscription(string email, string password)
+        // Method to validate login credentials from the database
+        private (bool isValid, int role, int isSubbed) ValidateLogin(string email, string password)
         {
-            // Query to check if the user exists and get the is_subbed value
-            string query = "SELECT is_subbed FROM user WHERE email = @Email AND pass = @Password";
+            // Query to retrieve role and subscription status based on email and password
+            string query = "SELECT Role, is_subbed FROM user WHERE email = @Email AND pass = @Password";
 
             try
             {
@@ -80,17 +90,20 @@ namespace cocosubbetaversion
                         cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Password", password);
 
-                        // Execute the query and get the is_subbed value
-                        object result = cmd.ExecuteScalar();
-
-                        // If the result is not null, return the is_subbed value as an integer
-                        if (result != null)
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            return Convert.ToInt32(result);
-                        }
-                        else
-                        {
-                            return null; // Return null if login is invalid
+                            if (reader.Read())
+                            {
+                                // Retrieve the role and subscription status
+                                int role = reader.GetInt32("Role");
+                                int isSubbed = reader.GetInt32("is_subbed");
+                                return (true, role, isSubbed); // Login successful
+                            }
+                            else
+                            {
+                                // No user found with given email and password
+                                return (false, 0, 0); // Login failed
+                            }
                         }
                     }
                 }
@@ -98,7 +111,7 @@ namespace cocosubbetaversion
             catch (Exception ex)
             {
                 MessageBox.Show($"Error connecting to database: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
+                return (false, 0, 0); // Login failed due to error
             }
         }
 

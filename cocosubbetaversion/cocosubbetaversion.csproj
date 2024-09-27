@@ -320,5 +320,11 @@
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2834%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2835%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2837%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

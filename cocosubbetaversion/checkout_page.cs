@@ -33,6 +33,7 @@ namespace cocosubbetaversion
 
         }
 
+
         private void fullname_text_TextChanged(object sender, EventArgs e)
         {
 
@@ -53,7 +54,7 @@ namespace cocosubbetaversion
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void sub_plan_nameClick(object sender, EventArgs e)
         {
 
         }

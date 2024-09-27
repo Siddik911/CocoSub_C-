@@ -52,6 +52,7 @@
             this.user_button.TabIndex = 0;
             this.user_button.Text = "USERS";
             this.user_button.UseTransparentBackground = true;
+            this.user_button.Click += new System.EventHandler(this.user_button_Click);
             // 
             // order_button
             // 
@@ -71,6 +72,7 @@
             this.order_button.TabIndex = 1;
             this.order_button.Text = "ORDERS";
             this.order_button.UseTransparentBackground = true;
+            this.order_button.Click += new System.EventHandler(this.order_button_Click);
             // 
             // product_button
             // 
@@ -90,6 +92,7 @@
             this.product_button.TabIndex = 2;
             this.product_button.Text = "PRODUCTS";
             this.product_button.UseTransparentBackground = true;
+            this.product_button.Click += new System.EventHandler(this.product_button_Click);
             // 
             // payment_button
             // 
@@ -122,6 +125,8 @@
             this.Controls.Add(this.order_button);
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "admin_payment";
             this.Text = "admin_payment";
             this.ResumeLayout(false);
