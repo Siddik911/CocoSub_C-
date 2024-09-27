@@ -189,6 +189,8 @@
             this.Controls.Add(this.cardNo_text);
             this.Controls.Add(this.name_on_card_text);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "payment_details";
             this.Text = "payment_details";
             this.ResumeLayout(false);

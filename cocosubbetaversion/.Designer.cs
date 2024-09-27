@@ -168,6 +168,8 @@
             this.Controls.Add(this.sub_plan_name);
             this.Controls.Add(this.hi_name);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "sub_dash";
             this.Text = "sub_dash_board";
             this.Load += new System.EventHandler(this.sub_dash_Load);

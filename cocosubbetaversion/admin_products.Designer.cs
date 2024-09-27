@@ -122,6 +122,8 @@
             this.Controls.Add(this.order_butoon);
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "admin_products";
             this.Text = "admin_products";
             this.ResumeLayout(false);

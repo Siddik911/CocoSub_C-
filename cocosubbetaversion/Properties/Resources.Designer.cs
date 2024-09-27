@@ -229,5 +229,15 @@ namespace cocosubbetaversion.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap C__x_CocoSub__37_ {
+            get {
+                object obj = ResourceManager.GetObject("C# x CocoSub (37)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

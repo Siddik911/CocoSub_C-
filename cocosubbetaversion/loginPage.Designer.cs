@@ -88,7 +88,6 @@ namespace cocosubbetaversion
             this.login_pass_text.SelectedText = "";
             this.login_pass_text.Size = new System.Drawing.Size(318, 49);
             this.login_pass_text.TabIndex = 1;
-            this.login_pass_text.UseSystemPasswordChar = false;
             this.login_pass_text.TextChanged += new System.EventHandler(this.login_pass_text_TextChanged);
             // 
             // checkBox1
@@ -100,7 +99,6 @@ namespace cocosubbetaversion
             this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.checkBox1.Location = new System.Drawing.Point(698, 471);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(161, 29);
             this.checkBox1.TabIndex = 2;
@@ -124,7 +122,6 @@ namespace cocosubbetaversion
             this.login_button.ForeColor = System.Drawing.Color.White;
             this.login_button.Location = new System.Drawing.Point(644, 518);
             this.login_button.Margin = new System.Windows.Forms.Padding(2);
-
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(140, 36);
             this.login_button.TabIndex = 3;
@@ -135,7 +132,7 @@ namespace cocosubbetaversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__19_;
+            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__35_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.login_button);
@@ -143,8 +140,9 @@ namespace cocosubbetaversion
             this.Controls.Add(this.login_pass_text);
             this.Controls.Add(this.login_name_text);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
-
+            this.MaximizeBox = false;
             this.Name = "loginPage";
             this.Text = "loginPage";
             this.Load += new System.EventHandler(this.loginPage_Load);

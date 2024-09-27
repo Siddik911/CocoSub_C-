@@ -317,7 +317,9 @@
             this.Controls.Add(this.Email_text);
             this.Controls.Add(this.fullname_text);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "checkout_page";
             this.Text = "checkout_page";
             this.Load += new System.EventHandler(this.checkout_page_Load);

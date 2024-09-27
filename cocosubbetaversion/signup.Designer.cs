@@ -164,7 +164,9 @@ namespace cocosubbetaversion
             this.Controls.Add(this.nametext);
             this.Controls.Add(this.signupbutton);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "signup";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "signup";
