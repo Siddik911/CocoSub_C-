@@ -7,7 +7,7 @@ namespace cocosubbetaversion
     public partial class signup : Form
     {
         // Connection string to your MySQL database
-        string connectionString = "Server=localhost;Database=cocodb;Uid=root;Pwd=admin;";
+        string connectionString = "Server=192.168.0.121;Database=cocodb;Uid=rafid;Pwd=admin;";
 
         // Variable to store the role based on the checkbox state
         int role = 0;
