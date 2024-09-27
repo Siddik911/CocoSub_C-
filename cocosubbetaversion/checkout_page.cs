@@ -12,6 +12,10 @@ namespace cocosubbetaversion
 {
     public partial class checkout_page : Form
     {
+
+
+
+
         public checkout_page()
         {
             InitializeComponent();
