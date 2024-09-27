@@ -22,6 +22,16 @@ namespace cocosubbetaversion
 
         }
 
+        private void payment_details_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void cancel_payment_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sub_plan subPlanForm = new sub_plan();
+            subPlanForm.Show();
+            this.Hide();
+        }
     }
 }

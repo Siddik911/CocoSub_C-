@@ -120,6 +120,7 @@
             this.redeem_button.Size = new System.Drawing.Size(242, 45);
             this.redeem_button.TabIndex = 6;
             this.redeem_button.Text = "REDEEM NOW";
+            this.redeem_button.Click += new System.EventHandler(this.redeem_button_Click);
             // 
             // expiry_date
             // 

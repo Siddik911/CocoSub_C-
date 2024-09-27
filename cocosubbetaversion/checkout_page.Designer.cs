@@ -44,6 +44,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.appply_button = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.back_buton = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // fullname_text
@@ -302,6 +303,26 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "/ per Month";
             // 
+            // back_buton
+            // 
+            this.back_buton.AutoRoundedCorners = true;
+            this.back_buton.BackColor = System.Drawing.Color.Transparent;
+            this.back_buton.BorderRadius = 21;
+            this.back_buton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.back_buton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.back_buton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.back_buton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.back_buton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.back_buton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.back_buton.ForeColor = System.Drawing.Color.White;
+            this.back_buton.Location = new System.Drawing.Point(12, 672);
+            this.back_buton.Name = "back_buton";
+            this.back_buton.Size = new System.Drawing.Size(132, 45);
+            this.back_buton.TabIndex = 17;
+            this.back_buton.Text = "Back";
+            this.back_buton.UseTransparentBackground = true;
+            this.back_buton.Click += new System.EventHandler(this.back_buton_Click);
+            // 
             // checkout_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +330,7 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__27_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.back_buton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.appply_button);
             this.Controls.Add(this.guna2Button1);
@@ -355,5 +377,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button appply_button;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button back_buton;
     }
 }

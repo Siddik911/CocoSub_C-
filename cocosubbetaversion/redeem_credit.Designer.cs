@@ -31,6 +31,7 @@
             this.drink_list = new Guna.UI2.WinForms.Guna2ComboBox();
             this.special_instraction = new Guna.UI2.WinForms.Guna2TextBox();
             this.submit_order = new Guna.UI2.WinForms.Guna2Button();
+            this.go_home_screen = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // drink_list
@@ -86,6 +87,26 @@
             this.submit_order.Size = new System.Drawing.Size(180, 45);
             this.submit_order.TabIndex = 2;
             this.submit_order.Text = "Submit order";
+            this.submit_order.Click += new System.EventHandler(this.submit_order_Click);
+            // 
+            // go_home_screen
+            // 
+            this.go_home_screen.AutoRoundedCorners = true;
+            this.go_home_screen.BackColor = System.Drawing.Color.Transparent;
+            this.go_home_screen.BorderRadius = 21;
+            this.go_home_screen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.go_home_screen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.go_home_screen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.go_home_screen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.go_home_screen.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+            this.go_home_screen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.go_home_screen.ForeColor = System.Drawing.Color.White;
+            this.go_home_screen.Location = new System.Drawing.Point(373, 622);
+            this.go_home_screen.Name = "go_home_screen";
+            this.go_home_screen.Size = new System.Drawing.Size(266, 45);
+            this.go_home_screen.TabIndex = 3;
+            this.go_home_screen.Text = "Go To Homescren";
+            this.go_home_screen.Click += new System.EventHandler(this.go_home_screen_Click);
             // 
             // redeem_credit
             // 
@@ -94,6 +115,7 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__32_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.go_home_screen);
             this.Controls.Add(this.submit_order);
             this.Controls.Add(this.special_instraction);
             this.Controls.Add(this.drink_list);
@@ -111,5 +133,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox drink_list;
         private Guna.UI2.WinForms.Guna2TextBox special_instraction;
         private Guna.UI2.WinForms.Guna2Button submit_order;
+        private Guna.UI2.WinForms.Guna2Button go_home_screen;
     }
 }

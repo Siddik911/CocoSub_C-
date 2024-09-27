@@ -78,5 +78,10 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void back_buton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,5 +34,17 @@ namespace cocosubbetaversion
             welcomePage.Show();
             this.Hide();
         }
+
+        private void redeem_button_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the RedeemCredit form
+            redeem_credit redeem_credit = new redeem_credit();
+
+            // Show the RedeemCredit form
+            redeem_credit.Show();
+
+            // Hide the current form
+            this.Hide();
+        }
     }
 }

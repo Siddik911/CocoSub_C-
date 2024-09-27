@@ -16,5 +16,17 @@ namespace cocosubbetaversion
         {
             InitializeComponent();
         }
+
+        private void submit_order_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void go_home_screen_Click(object sender, EventArgs e)
+        {
+            sub_dash subDashForm = new sub_dash();
+            subDashForm.Show();
+            this.Hide();
+        }
     }
 }

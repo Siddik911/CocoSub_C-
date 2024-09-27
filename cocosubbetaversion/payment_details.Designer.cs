@@ -35,6 +35,7 @@
             this.total_amount = new System.Windows.Forms.Label();
             this.month_label = new System.Windows.Forms.Label();
             this.pay_now_button = new Guna.UI2.WinForms.Guna2Button();
+            this.cancel_payment_link = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // name_on_card_text
@@ -168,11 +169,24 @@
             this.pay_now_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.pay_now_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.pay_now_button.ForeColor = System.Drawing.Color.White;
-            this.pay_now_button.Location = new System.Drawing.Point(279, 571);
+            this.pay_now_button.Location = new System.Drawing.Point(242, 560);
             this.pay_now_button.Name = "pay_now_button";
             this.pay_now_button.Size = new System.Drawing.Size(423, 56);
             this.pay_now_button.TabIndex = 6;
             this.pay_now_button.Text = "Pay Now";
+            // 
+            // cancel_payment_link
+            // 
+            this.cancel_payment_link.AutoSize = true;
+            this.cancel_payment_link.BackColor = System.Drawing.Color.Transparent;
+            this.cancel_payment_link.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_payment_link.Location = new System.Drawing.Point(393, 628);
+            this.cancel_payment_link.Name = "cancel_payment_link";
+            this.cancel_payment_link.Size = new System.Drawing.Size(125, 21);
+            this.cancel_payment_link.TabIndex = 7;
+            this.cancel_payment_link.TabStop = true;
+            this.cancel_payment_link.Text = "Cancel Payment";
+            this.cancel_payment_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.cancel_payment_link_LinkClicked);
             // 
             // payment_details
             // 
@@ -181,6 +195,7 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__28_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.cancel_payment_link);
             this.Controls.Add(this.pay_now_button);
             this.Controls.Add(this.month_label);
             this.Controls.Add(this.total_amount);
@@ -193,6 +208,7 @@
             this.MaximizeBox = false;
             this.Name = "payment_details";
             this.Text = "payment_details";
+            this.Load += new System.EventHandler(this.payment_details_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +223,6 @@
         private System.Windows.Forms.Label total_amount;
         private System.Windows.Forms.Label month_label;
         private Guna.UI2.WinForms.Guna2Button pay_now_button;
+        private System.Windows.Forms.LinkLabel cancel_payment_link;
     }
 }
