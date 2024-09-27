@@ -13,9 +13,6 @@ namespace cocosubbetaversion
     public partial class checkout_page : Form
     {
 
-
-
-
         public checkout_page()
         {
             InitializeComponent();
@@ -52,6 +49,11 @@ namespace cocosubbetaversion
         }
 
         private void adress_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
