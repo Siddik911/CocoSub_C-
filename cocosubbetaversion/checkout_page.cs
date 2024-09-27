@@ -28,7 +28,7 @@ namespace cocosubbetaversion
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void apply_button_Click(object sender, EventArgs e)
         {
 
         }
@@ -55,6 +55,26 @@ namespace cocosubbetaversion
         }
 
         private void sub_plan_nameClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sub_cost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sub_total_cost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void discount_amont_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void total_amount_Click(object sender, EventArgs e)
         {
 
         }

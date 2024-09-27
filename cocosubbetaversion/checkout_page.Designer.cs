@@ -149,7 +149,6 @@
             this.sub_plan_name.TabIndex = 4;
             this.sub_plan_name.Text = "Coffe Lover ";
             this.sub_plan_name.Click += new System.EventHandler(this.sub_plan_nameClick);
-
             // 
             // sub_cost
             // 
@@ -161,6 +160,7 @@
             this.sub_cost.Size = new System.Drawing.Size(62, 37);
             this.sub_cost.TabIndex = 6;
             this.sub_cost.Text = "$35";
+            this.sub_cost.Click += new System.EventHandler(this.sub_cost_Click);
             // 
             // discount_text
             // 
@@ -228,6 +228,7 @@
             this.sub_total_cost.Size = new System.Drawing.Size(62, 37);
             this.sub_total_cost.TabIndex = 11;
             this.sub_total_cost.Text = "$35";
+            this.sub_total_cost.Click += new System.EventHandler(this.sub_total_cost_Click);
             // 
             // discount_amont
             // 
@@ -239,6 +240,7 @@
             this.discount_amont.Size = new System.Drawing.Size(47, 37);
             this.discount_amont.TabIndex = 12;
             this.discount_amont.Text = "$5";
+            this.discount_amont.Click += new System.EventHandler(this.discount_amont_Click);
             // 
             // total_amount
             // 
@@ -250,6 +252,7 @@
             this.total_amount.Size = new System.Drawing.Size(65, 37);
             this.total_amount.TabIndex = 13;
             this.total_amount.Text = "$30";
+            this.total_amount.Click += new System.EventHandler(this.total_amount_Click);
             // 
             // guna2Button1
             // 
@@ -286,7 +289,7 @@
             this.appply_button.Size = new System.Drawing.Size(155, 45);
             this.appply_button.TabIndex = 15;
             this.appply_button.Text = "APPLY NOW";
-            this.appply_button.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.appply_button.Click += new System.EventHandler(this.apply_button_Click);
             // 
             // label1
             // 
