@@ -32,9 +32,9 @@
             this.cardNo_text = new Guna.UI2.WinForms.Guna2TextBox();
             this.expiry_text = new Guna.UI2.WinForms.Guna2TextBox();
             this.cvv_text = new Guna.UI2.WinForms.Guna2TextBox();
-            this.total = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.total_amount = new System.Windows.Forms.Label();
+            this.month_label = new System.Windows.Forms.Label();
+            this.pay_now_button = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // name_on_card_text
@@ -133,46 +133,46 @@
             this.cvv_text.Size = new System.Drawing.Size(207, 41);
             this.cvv_text.TabIndex = 3;
             // 
-            // total
+            // total_amount
             // 
-            this.total.AutoSize = true;
-            this.total.BackColor = System.Drawing.Color.Transparent;
-            this.total.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total.Location = new System.Drawing.Point(636, 323);
-            this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(219, 128);
-            this.total.TabIndex = 4;
-            this.total.Text = "$30";
+            this.total_amount.AutoSize = true;
+            this.total_amount.BackColor = System.Drawing.Color.Transparent;
+            this.total_amount.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_amount.Location = new System.Drawing.Point(636, 323);
+            this.total_amount.Name = "total_amount";
+            this.total_amount.Size = new System.Drawing.Size(219, 128);
+            this.total_amount.TabIndex = 4;
+            this.total_amount.Text = "$30";
             // 
-            // label2
+            // month_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(823, 379);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 47);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "/ Month";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.month_label.AutoSize = true;
+            this.month_label.BackColor = System.Drawing.Color.Transparent;
+            this.month_label.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month_label.Location = new System.Drawing.Point(823, 379);
+            this.month_label.Name = "month_label";
+            this.month_label.Size = new System.Drawing.Size(150, 47);
+            this.month_label.TabIndex = 5;
+            this.month_label.Text = "/ Month";
+            this.month_label.Click += new System.EventHandler(this.label2_Click);
             // 
-            // guna2Button1
+            // pay_now_button
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 27;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(279, 571);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(423, 56);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Pay Now";
+            this.pay_now_button.AutoRoundedCorners = true;
+            this.pay_now_button.BackColor = System.Drawing.Color.Transparent;
+            this.pay_now_button.BorderRadius = 27;
+            this.pay_now_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.pay_now_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.pay_now_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.pay_now_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.pay_now_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+            this.pay_now_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.pay_now_button.ForeColor = System.Drawing.Color.White;
+            this.pay_now_button.Location = new System.Drawing.Point(279, 571);
+            this.pay_now_button.Name = "pay_now_button";
+            this.pay_now_button.Size = new System.Drawing.Size(423, 56);
+            this.pay_now_button.TabIndex = 6;
+            this.pay_now_button.Text = "Pay Now";
             // 
             // payment_details
             // 
@@ -181,9 +181,9 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__28_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.total);
+            this.Controls.Add(this.pay_now_button);
+            this.Controls.Add(this.month_label);
+            this.Controls.Add(this.total_amount);
             this.Controls.Add(this.cvv_text);
             this.Controls.Add(this.expiry_text);
             this.Controls.Add(this.cardNo_text);
@@ -204,8 +204,8 @@
         private Guna.UI2.WinForms.Guna2TextBox cardNo_text;
         private Guna.UI2.WinForms.Guna2TextBox expiry_text;
         private Guna.UI2.WinForms.Guna2TextBox cvv_text;
-        private System.Windows.Forms.Label total;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label total_amount;
+        private System.Windows.Forms.Label month_label;
+        private Guna.UI2.WinForms.Guna2Button pay_now_button;
     }
 }
