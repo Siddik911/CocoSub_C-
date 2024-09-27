@@ -104,7 +104,9 @@
             this.Controls.Add(this.plan_lover_button);
             this.Controls.Add(this.plan_ent_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "sub_plan";
             this.Text = "sub_plan";
             this.ResumeLayout(false);

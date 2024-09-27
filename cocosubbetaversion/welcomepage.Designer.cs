@@ -134,7 +134,9 @@ namespace cocosubbetaversion
             this.Controls.Add(this.exit);
             this.Controls.Add(this.newuser);
             this.Controls.Add(this.alreadyuser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "welcomepage";
             this.Text = "welcomepage";
             this.ResumeLayout(false);
