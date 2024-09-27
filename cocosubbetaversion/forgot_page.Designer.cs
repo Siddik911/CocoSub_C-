@@ -157,7 +157,9 @@ namespace cocosubbetaversion
             this.Controls.Add(this.new_password_text);
             this.Controls.Add(this.forgot_email_text);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "forgot_page";
             this.Text = "forgot_page";
             this.ResumeLayout(false);

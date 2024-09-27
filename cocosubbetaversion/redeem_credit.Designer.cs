@@ -98,6 +98,8 @@
             this.Controls.Add(this.special_instraction);
             this.Controls.Add(this.drink_list);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "redeem_credit";
             this.Text = "redeem_credit";
             this.ResumeLayout(false);

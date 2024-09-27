@@ -32,6 +32,8 @@
             this.order_butoon = new Guna.UI2.WinForms.Guna2Button();
             this.products_button = new Guna.UI2.WinForms.Guna2Button();
             this.payment_button = new Guna.UI2.WinForms.Guna2Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // user_button
@@ -113,6 +115,15 @@
             this.payment_button.UseTransparentBackground = true;
             this.payment_button.Click += new System.EventHandler(this.payment_button_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(279, 136);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(486, 435);
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // admin_products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,13 +131,17 @@
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__34_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.payment_button);
             this.Controls.Add(this.products_button);
             this.Controls.Add(this.order_butoon);
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "admin_products";
             this.Text = "admin_products";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,5 +152,6 @@
         private Guna.UI2.WinForms.Guna2Button order_butoon;
         private Guna.UI2.WinForms.Guna2Button products_button;
         private Guna.UI2.WinForms.Guna2Button payment_button;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

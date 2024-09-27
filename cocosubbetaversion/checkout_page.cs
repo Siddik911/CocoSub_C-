@@ -33,6 +33,8 @@ namespace cocosubbetaversion
 
         }
 
+<<<<<<< HEAD
+=======
         private void fullname_text_TextChanged(object sender, EventArgs e)
         {
 
@@ -53,6 +55,7 @@ namespace cocosubbetaversion
 
         }
 
+>>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
         private void label1_Click(object sender, EventArgs e)
         {
 
