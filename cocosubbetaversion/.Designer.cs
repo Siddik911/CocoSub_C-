@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.hi_name = new System.Windows.Forms.Label();
-            this.sub_plan_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.credit_left_label = new System.Windows.Forms.Label();
             this.sub_plan_name_button = new System.Windows.Forms.Label();
@@ -44,23 +43,11 @@
             this.hi_name.AutoSize = true;
             this.hi_name.BackColor = System.Drawing.Color.Transparent;
             this.hi_name.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hi_name.Location = new System.Drawing.Point(42, 61);
+            this.hi_name.Location = new System.Drawing.Point(358, 20);
             this.hi_name.Name = "hi_name";
             this.hi_name.Size = new System.Drawing.Size(259, 47);
             this.hi_name.TabIndex = 0;
             this.hi_name.Text = "HELLO,RAFID !";
-            // 
-            // sub_plan_name
-            // 
-            this.sub_plan_name.AutoSize = true;
-            this.sub_plan_name.BackColor = System.Drawing.Color.Transparent;
-            this.sub_plan_name.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub_plan_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.sub_plan_name.Location = new System.Drawing.Point(278, 23);
-            this.sub_plan_name.Name = "sub_plan_name";
-            this.sub_plan_name.Size = new System.Drawing.Size(239, 25);
-            this.sub_plan_name.TabIndex = 1;
-            this.sub_plan_name.Text = "Monthly Coffe Lover Plan";
             // 
             // label1
             // 
@@ -165,7 +152,6 @@
             this.Controls.Add(this.sub_plan_name_button);
             this.Controls.Add(this.credit_left_label);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.sub_plan_name);
             this.Controls.Add(this.hi_name);
             this.DoubleBuffered = true;
             this.Name = "sub_dash";
@@ -179,7 +165,6 @@
         #endregion
 
         private System.Windows.Forms.Label hi_name;
-        private System.Windows.Forms.Label sub_plan_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label credit_left_label;
         private System.Windows.Forms.Label sub_plan_name_button;

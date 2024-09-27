@@ -33,13 +33,25 @@ namespace cocosubbetaversion
                 return;
             }
 
-            // Call the method to check login credentials
-            if (ValidateLogin(email, password))
+            // Call the method to check login credentials and subscription status
+            int? isSubbed = ValidateLoginAndSubscription(email, password);
+
+            if (isSubbed.HasValue)
             {
-                // Open the sub_dash form directly after successful login
-                sub_dash dashboard = new sub_dash();
-                this.Hide();  // Hide the login page
-                dashboard.Show();  // Show the sub_dash form
+                if (isSubbed.Value == 1)
+                {
+                    // Redirect to the sub_dash form if the user is subscribed
+                    sub_dash dashboard = new sub_dash();
+                    this.Hide();  // Hide the login page
+                    dashboard.Show();  // Show the sub_dash form
+                }
+                else
+                {
+                    // Redirect to the sub_plan form if the user is not subscribed
+                    sub_plan subscriptionPlan = new sub_plan();
+                    this.Hide();  // Hide the login page
+                    subscriptionPlan.Show();  // Show the sub_plan form
+                }
 
                 // Assuming userName is retrieved from the database after successful login
                 string userName = "User"; // Replace with actual userName retrieval logic
@@ -51,11 +63,11 @@ namespace cocosubbetaversion
             }
         }
 
-        // Method to validate login credentials from the database
-        private bool ValidateLogin(string email, string password)
+        // Method to validate login credentials and check subscription status
+        private int? ValidateLoginAndSubscription(string email, string password)
         {
-            // Query to check if the user exists with the given email and password
-            string query = "SELECT COUNT(*) FROM user WHERE email = @Email AND pass = @Password";
+            // Query to check if the user exists and get the is_subbed value
+            string query = "SELECT is_subbed FROM user WHERE email = @Email AND pass = @Password";
 
             try
             {
@@ -68,18 +80,25 @@ namespace cocosubbetaversion
                         cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Password", password);
 
-                        // Execute the query and get the result
-                        int result = Convert.ToInt32(cmd.ExecuteScalar());
+                        // Execute the query and get the is_subbed value
+                        object result = cmd.ExecuteScalar();
 
-                        // If the result is 1, login is successful
-                        return result == 1;
+                        // If the result is not null, return the is_subbed value as an integer
+                        if (result != null)
+                        {
+                            return Convert.ToInt32(result);
+                        }
+                        else
+                        {
+                            return null; // Return null if login is invalid
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error connecting to database: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                return null;
             }
         }
 
