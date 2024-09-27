@@ -136,11 +136,7 @@ namespace cocosubbetaversion
             this.passwordtext.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passwordtext.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordtext.Font = new System.Drawing.Font("Segoe UI", 9F);
-<<<<<<< HEAD
             this.passwordtext.ForeColor = System.Drawing.Color.Black;
-=======
-            this.passwordtext.ForeColor = System.Drawing.Color.Transparent;
->>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             this.passwordtext.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordtext.Location = new System.Drawing.Point(558, 478);
             this.passwordtext.Name = "passwordtext";
@@ -149,10 +145,7 @@ namespace cocosubbetaversion
             this.passwordtext.SelectedText = "";
             this.passwordtext.Size = new System.Drawing.Size(280, 30);
             this.passwordtext.TabIndex = 5;
-<<<<<<< HEAD
-=======
             this.passwordtext.TextChanged += new System.EventHandler(this.passwordtext_TextChanged);
->>>>>>> b8c8057048f2dccf0701450c72f70d84aa10d48c
             // 
             // signup
             // 
