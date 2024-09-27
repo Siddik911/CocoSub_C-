@@ -80,6 +80,7 @@ namespace cocosubbetaversion
             this.nametext.Name = "nametext";
             this.nametext.PasswordChar = '\0';
             this.nametext.PlaceholderText = "";
+            this.nametext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.nametext.SelectedText = "";
             this.nametext.Size = new System.Drawing.Size(280, 36);
             this.nametext.TabIndex = 1;
@@ -105,6 +106,7 @@ namespace cocosubbetaversion
             this.emailtext.Name = "emailtext";
             this.emailtext.PasswordChar = '\0';
             this.emailtext.PlaceholderText = "";
+            this.emailtext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.emailtext.SelectedText = "";
             this.emailtext.Size = new System.Drawing.Size(280, 33);
             this.emailtext.TabIndex = 3;
@@ -142,6 +144,7 @@ namespace cocosubbetaversion
             this.passwordtext.Name = "passwordtext";
             this.passwordtext.PasswordChar = '\0';
             this.passwordtext.PlaceholderText = "";
+            this.passwordtext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.passwordtext.SelectedText = "";
             this.passwordtext.Size = new System.Drawing.Size(280, 30);
             this.passwordtext.TabIndex = 5;
