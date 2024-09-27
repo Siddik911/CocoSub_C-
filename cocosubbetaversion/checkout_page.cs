@@ -35,5 +35,25 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void fullname_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Phone_number_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adress_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
