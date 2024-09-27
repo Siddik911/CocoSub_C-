@@ -184,6 +184,7 @@
             this.discount_text.SelectedText = "";
             this.discount_text.Size = new System.Drawing.Size(190, 43);
             this.discount_text.TabIndex = 7;
+            this.discount_text.TextChanged += new System.EventHandler(this.discount_text_TextChanged);
             // 
             // sub_label
             // 
@@ -195,7 +196,6 @@
             this.sub_label.Size = new System.Drawing.Size(130, 37);
             this.sub_label.TabIndex = 8;
             this.sub_label.Text = "Sub Total";
-            // this.sub_label.Click += new System.EventHandler(this.label4_Click);
             // 
             // discount_label
             // 
@@ -240,7 +240,7 @@
             this.discount_amont.Name = "discount_amont";
             this.discount_amont.Size = new System.Drawing.Size(47, 37);
             this.discount_amont.TabIndex = 12;
-            this.discount_amont.Text = "$5";
+            this.discount_amont.Text = "$0.00";
             this.discount_amont.Click += new System.EventHandler(this.discount_amont_Click);
             // 
             // total_amount
