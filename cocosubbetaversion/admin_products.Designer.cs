@@ -113,10 +113,14 @@
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
-
-
-
-
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Location = new System.Drawing.Point(236, 192);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(760, 397);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // admin_products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

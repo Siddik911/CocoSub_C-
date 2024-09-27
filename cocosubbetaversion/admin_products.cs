@@ -35,7 +35,7 @@ namespace cocosubbetaversion
                     connection.Open();
 
                     // Define the query to select all data from the 'payment' table
-                    string query = "SELECT * FROM payment";
+                    string query = "SELECT * FROM menu";
 
                     // Create a MySQL command to execute the query
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
