@@ -113,6 +113,7 @@
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
+            this.payment_button.Click += new System.EventHandler(this.payment_button_Click);
             // 
             // dataGridView1
             // 

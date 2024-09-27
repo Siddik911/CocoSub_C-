@@ -29,7 +29,7 @@ namespace cocosubbetaversion
             }
         }
 
-        // After successful sign up, open a new form named sub_plan
+        // After successful sign up, open either admin_users or sub_plan form
         private void signup_Click(object sender, EventArgs e)
         {
             PerformSignup();
@@ -97,11 +97,19 @@ namespace cocosubbetaversion
 
                     SignupUser(name, email);
 
-                    MessageBox.Show("User registered successfully!");
-
-                    // After all operations, open the sub_plan form
-                    sub_plan subPlanForm = new sub_plan();
-                    subPlanForm.Show();
+                    // Redirect to the appropriate form based on role
+                    if (role == 1)
+                    {
+                        // Open the admin_users form if the role is 1 (admin)
+                        admin_users adminForm = new admin_users();
+                        adminForm.Show();
+                    }
+                    else
+                    {
+                        // Open the sub_plan form if the role is 0 (normal user)
+                        sub_plan subPlanForm = new sub_plan();
+                        subPlanForm.Show();
+                    }
 
                     // Hide the current signup form
                     this.Hide();

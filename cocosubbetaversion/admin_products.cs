@@ -75,7 +75,8 @@ namespace cocosubbetaversion
             this.Hide();
         }
 
-        private void payment_button_Click_1(object sender, EventArgs e)
+
+        private void payment_button_Click(object sender, EventArgs e)
         {
             admin_payment form = new admin_payment();
             form.Show();
