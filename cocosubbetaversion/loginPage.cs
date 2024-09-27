@@ -13,6 +13,9 @@ namespace cocosubbetaversion
         public loginPage()
         {
             InitializeComponent();
+            // Subscribe to the KeyPress event for Enter key handling
+            this.KeyPreview = true;
+            this.KeyPress += new KeyPressEventHandler(loginPage_KeyPress);
         }
 
         private void loginPage_Load(object sender, EventArgs e)
@@ -21,6 +24,21 @@ namespace cocosubbetaversion
         }
 
         private void loginButton1_Click(object sender, EventArgs e)
+        {
+            PerformLogin();
+        }
+
+        // Event handler for the Enter key press
+        private void loginPage_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                PerformLogin();
+            }
+        }
+
+        // Method to handle the login logic
+        private void PerformLogin()
         {
             // Get the email and password from the input fields
             string email = login_name_text.Text.Trim();
@@ -33,39 +51,32 @@ namespace cocosubbetaversion
                 return;
             }
 
-            // Call the method to check login credentials and handle redirection
-            var loginResult = ValidateLogin(email, password);
-            if (loginResult.isValid)
+            // Call the method to check login credentials
+            if (ValidateLogin(email, password, out int isSubbed, out int role))
             {
-                // Redirect based on the role and subscription status
-                if (loginResult.role == 1)
+                if (role == 1)
                 {
-                    // Redirect to admin dashboard
+                    // Redirect to admin_users form
                     admin_users adminDashboard = new admin_users();
-                    this.Hide();
-                    adminDashboard.Show();
+                    this.Hide();  // Hide the login page
+                    adminDashboard.Show();  // Show the admin_users form
                 }
                 else
                 {
-                    if (loginResult.isSubbed == 1)
+                    // Proceed with regular redirection based on is_subbed value
+                    if (isSubbed == 1)
                     {
-                        // Redirect to subscription dashboard
-                        sub_dash dashboard = new sub_dash();
+                        sub_dash subDashboard = new sub_dash();
                         this.Hide();
-                        dashboard.Show();
+                        subDashboard.Show();
                     }
                     else
                     {
-                        // Redirect to subscription plan page
-                        sub_plan subscriptionPlan = new sub_plan();
+                        sub_plan subPlan = new sub_plan();
                         this.Hide();
-                        subscriptionPlan.Show();
+                        subPlan.Show();
                     }
                 }
-
-                // Assuming userName is retrieved from the database after successful login
-                string userName = "User"; // Replace with actual userName retrieval logic
-                LoginUser(userName, email);
             }
             else
             {
@@ -74,10 +85,13 @@ namespace cocosubbetaversion
         }
 
         // Method to validate login credentials from the database
-        private (bool isValid, int role, int isSubbed) ValidateLogin(string email, string password)
+        private bool ValidateLogin(string email, string password, out int isSubbed, out int role)
         {
-            // Query to retrieve role and subscription status based on email and password
-            string query = "SELECT Role, is_subbed FROM user WHERE email = @Email AND pass = @Password";
+            isSubbed = 0;
+            role = 0;
+
+            // Query to check the user data from the database, including role and subscription status
+            string query = "SELECT is_subbed, Role FROM user WHERE email = @Email AND pass = @Password";
 
             try
             {
@@ -94,15 +108,10 @@ namespace cocosubbetaversion
                         {
                             if (reader.Read())
                             {
-                                // Retrieve the role and subscription status
-                                int role = reader.GetInt32("Role");
-                                int isSubbed = reader.GetInt32("is_subbed");
-                                return (true, role, isSubbed); // Login successful
-                            }
-                            else
-                            {
-                                // No user found with given email and password
-                                return (false, 0, 0); // Login failed
+                                // Retrieve the is_subbed and Role values
+                                isSubbed = reader.GetInt32("is_subbed");
+                                role = reader.GetInt32("Role");
+                                return true;
                             }
                         }
                     }
@@ -111,8 +120,9 @@ namespace cocosubbetaversion
             catch (Exception ex)
             {
                 MessageBox.Show($"Error connecting to database: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return (false, 0, 0); // Login failed due to error
             }
+
+            return false;
         }
 
         private void login_name_text_TextChanged(object sender, EventArgs e)

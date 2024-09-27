@@ -15,10 +15,28 @@ namespace cocosubbetaversion
         public signup()
         {
             InitializeComponent();
+            // Subscribe to the KeyPress event for Enter key handling
+            this.KeyPreview = true;
+            this.KeyPress += new KeyPressEventHandler(signup_KeyPress);
+        }
+
+        // Event handler for the Enter key press
+        private void signup_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                PerformSignup();
+            }
         }
 
         // After successful sign up, open a new form named sub_plan
         private void signup_Click(object sender, EventArgs e)
+        {
+            PerformSignup();
+        }
+
+        // Method to handle the signup logic
+        private void PerformSignup()
         {
             // Retrieve user inputs from text boxes
             string name = nametext.Text;
@@ -81,10 +99,11 @@ namespace cocosubbetaversion
 
                     MessageBox.Show("User registered successfully!");
 
-                    // Open the sub_plan form
-                    checkout_page checkout_PageForm = new checkout_page();
-                    checkout_PageForm.Show();
+                    // After all operations, open the sub_plan form
+                    sub_plan subPlanForm = new sub_plan();
+                    subPlanForm.Show();
 
+                    // Hide the current signup form
                     this.Hide();
                 }
                 catch (Exception ex)
@@ -126,6 +145,7 @@ namespace cocosubbetaversion
             // If checkbox is checked, set role to 1, otherwise set to 0
             role = checkBox.Checked ? 1 : 0;
         }
+
         private void SignupUser(string userName, string email)
         {
             // Assuming userName and email are obtained after successful login/signup
