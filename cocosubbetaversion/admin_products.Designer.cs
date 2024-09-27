@@ -116,9 +116,9 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Location = new System.Drawing.Point(236, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(326, 203);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(760, 397);
+            this.dataGridView1.Size = new System.Drawing.Size(656, 405);
             this.dataGridView1.TabIndex = 0;
             // 
             // admin_products
