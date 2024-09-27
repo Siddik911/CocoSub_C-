@@ -148,7 +148,7 @@
             this.sub_plan_name.Size = new System.Drawing.Size(172, 37);
             this.sub_plan_name.TabIndex = 4;
             this.sub_plan_name.Text = "Coffe Lover ";
-            this.sub_plan_name.Click += new System.EventHandler(this.label1_Click);
+            this.sub_plan_name.Click += new System.EventHandler(this.sub_plan_nameClick);
 
             // 
             // sub_cost

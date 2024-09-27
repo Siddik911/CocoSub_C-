@@ -37,5 +37,26 @@ namespace cocosubbetaversion
 
             dataGridView1.DataSource = paymentTable;
         }
+
+        private void user_button_Click(object sender, EventArgs e)
+        {
+            admin_users form = new admin_users();
+            form.Show();
+            this.Hide();
+        }
+
+        private void order_butoon_Click(object sender, EventArgs e)
+        {
+            admin_order form = new admin_order();
+            form.Show();
+            this.Hide();
+        }
+
+        private void payment_button_Click(object sender, EventArgs e)
+        {
+            admin_payment form = new admin_payment();
+            form.Show();
+            this.Hide();
+        }
     }
 }

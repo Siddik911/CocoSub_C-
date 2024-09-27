@@ -54,6 +54,7 @@
             this.user_button.TabIndex = 0;
             this.user_button.Text = "USERS";
             this.user_button.UseTransparentBackground = true;
+            this.user_button.Click += new System.EventHandler(this.user_button_Click);
             // 
             // order_butoon
             // 
@@ -73,6 +74,7 @@
             this.order_butoon.TabIndex = 1;
             this.order_butoon.Text = "ORDERS";
             this.order_butoon.UseTransparentBackground = true;
+            this.order_butoon.Click += new System.EventHandler(this.order_butoon_Click);
             // 
             // products_button
             // 
@@ -111,6 +113,7 @@
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
+
 
 
 

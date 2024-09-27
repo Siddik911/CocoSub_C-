@@ -54,7 +54,7 @@ namespace cocosubbetaversion
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void sub_plan_nameClick(object sender, EventArgs e)
         {
 
         }
