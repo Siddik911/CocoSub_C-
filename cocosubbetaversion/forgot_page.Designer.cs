@@ -106,7 +106,7 @@ namespace cocosubbetaversion
             this.confirm_password_text.SelectedText = "";
             this.confirm_password_text.Size = new System.Drawing.Size(277, 36);
             this.confirm_password_text.TabIndex = 2;
-            this.confirm_password_text.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.confirm_password_text.TextChanged += new System.EventHandler(this.confirm_password_TextChanged);
             // 
             // send_button
             // 

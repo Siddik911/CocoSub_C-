@@ -65,7 +65,7 @@
             this.plan_lover_button.FillColor = System.Drawing.Color.White;
             this.plan_lover_button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plan_lover_button.ForeColor = System.Drawing.Color.Black;
-            this.plan_lover_button.Location = new System.Drawing.Point(414, 586);
+            this.plan_lover_button.Location = new System.Drawing.Point(396, 586);
             this.plan_lover_button.Margin = new System.Windows.Forms.Padding(2);
             this.plan_lover_button.Name = "plan_lover_button";
             this.plan_lover_button.Size = new System.Drawing.Size(204, 50);
@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__22_;
+            this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__38_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.plan_com_button);

@@ -27,7 +27,7 @@ namespace cocosubbetaversion
 
         }
 
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        private void confirm_password_TextChanged(object sender, EventArgs e)
         {
 
         }

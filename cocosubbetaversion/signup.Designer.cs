@@ -35,6 +35,7 @@ namespace cocosubbetaversion
             this.emailtext = new Guna.UI2.WinForms.Guna2TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.passwordtext = new Guna.UI2.WinForms.Guna2TextBox();
+            this.back_button = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // signupbutton
@@ -51,7 +52,7 @@ namespace cocosubbetaversion
             this.signupbutton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.signupbutton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.signupbutton.ForeColor = System.Drawing.Color.White;
-            this.signupbutton.Location = new System.Drawing.Point(636, 583);
+            this.signupbutton.Location = new System.Drawing.Point(718, 579);
             this.signupbutton.Margin = new System.Windows.Forms.Padding(2);
             this.signupbutton.Name = "signupbutton";
             this.signupbutton.Size = new System.Drawing.Size(120, 27);
@@ -150,6 +151,25 @@ namespace cocosubbetaversion
             this.passwordtext.TabIndex = 5;
             this.passwordtext.TextChanged += new System.EventHandler(this.passwordtext_TextChanged);
             // 
+            // back_button
+            // 
+            this.back_button.AutoRoundedCorners = true;
+            this.back_button.BackColor = System.Drawing.Color.Transparent;
+            this.back_button.BorderRadius = 12;
+            this.back_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.back_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.back_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.back_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.back_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
+            this.back_button.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button.ForeColor = System.Drawing.Color.White;
+            this.back_button.Location = new System.Drawing.Point(558, 579);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(120, 27);
+            this.back_button.TabIndex = 6;
+            this.back_button.Text = "Back";
+            this.back_button.UseTransparentBackground = true;
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +178,7 @@ namespace cocosubbetaversion
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__18_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.passwordtext);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.emailtext);
@@ -182,5 +203,6 @@ namespace cocosubbetaversion
         private Guna.UI2.WinForms.Guna2TextBox emailtext;
         private System.Windows.Forms.CheckBox checkBox1;
         private Guna.UI2.WinForms.Guna2TextBox passwordtext;
+        private Guna.UI2.WinForms.Guna2Button back_button;
     }
 }
