@@ -199,6 +199,7 @@
             this.log_out_button.Size = new System.Drawing.Size(137, 47);
             this.log_out_button.TabIndex = 12;
             this.log_out_button.Text = "LOG OUT";
+            this.log_out_button.Click += new System.EventHandler(this.log_out_button_Click);
             // 
             // user_name
             // 
@@ -231,7 +232,6 @@
             this.Controls.Add(this.sub_plan_name);
             this.Controls.Add(this.credit_left_label);
             this.Controls.Add(this.hi_label);
-
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

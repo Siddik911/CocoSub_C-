@@ -26,5 +26,13 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void log_out_button_Click(object sender, EventArgs e)
+        {
+            // Redirect to WelcomePage form
+            WelcomePage welcomePage = new WelcomePage();
+            welcomePage.Show();
+            this.Hide();
+        }
     }
 }
