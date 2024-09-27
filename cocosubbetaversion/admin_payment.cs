@@ -16,5 +16,26 @@ namespace cocosubbetaversion
         {
             InitializeComponent();
         }
+
+        private void user_button_Click(object sender, EventArgs e)
+        {
+            admin_users form = new admin_users();
+            form.Show();
+            this.Hide();
+        }
+
+        private void order_button_Click(object sender, EventArgs e)
+        {
+            admin_order form = new admin_order();
+            form.Show();
+            this.Hide();
+        }
+
+        private void product_button_Click(object sender, EventArgs e)
+        {
+            admin_products form = new admin_products();
+            form.Show();
+            this.Hide();
+        }
     }
 }
