@@ -140,7 +140,6 @@
             // 
             // sub_plan_name
             // 
-<<<<<<< HEAD
             this.sub_plan_name.AutoSize = true;
             this.sub_plan_name.BackColor = System.Drawing.Color.Transparent;
             this.sub_plan_name.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,17 +149,7 @@
             this.sub_plan_name.TabIndex = 4;
             this.sub_plan_name.Text = "Coffe Lover ";
             this.sub_plan_name.Click += new System.EventHandler(this.label1_Click);
-=======
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(610, 209);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 37);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Coffe Lover ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
->>>>>>> 5104bc200b8f467ee9f73846aa276519398c4a39
+
             // 
             // sub_cost
             // 
