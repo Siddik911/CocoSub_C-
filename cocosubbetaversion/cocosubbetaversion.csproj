@@ -139,6 +139,7 @@
     <Compile Include="checkout_page.Designer.cs">
       <DependentUpon>checkout_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="do.cs" />
     <Compile Include="forgot_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +329,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C# x CocoSub %2838%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2839%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2840%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C# x CocoSub %2841%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,10 @@ namespace cocosubbetaversion
         {
             InitializeComponent();
         }
+
+        private void succesful_subscriber_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,7 +40,7 @@
             // 
             this.user_button.AutoRoundedCorners = true;
             this.user_button.BackColor = System.Drawing.Color.Transparent;
-            this.user_button.BorderRadius = 21;
+            this.user_button.BorderRadius = 26;
             this.user_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.user_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.user_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -48,9 +48,10 @@
             this.user_button.FillColor = System.Drawing.Color.White;
             this.user_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.user_button.ForeColor = System.Drawing.Color.Black;
-            this.user_button.Location = new System.Drawing.Point(30, 203);
+            this.user_button.Location = new System.Drawing.Point(40, 250);
+            this.user_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.user_button.Name = "user_button";
-            this.user_button.Size = new System.Drawing.Size(180, 45);
+            this.user_button.Size = new System.Drawing.Size(240, 55);
             this.user_button.TabIndex = 0;
             this.user_button.Text = "USERS";
             this.user_button.UseTransparentBackground = true;
@@ -60,7 +61,7 @@
             // 
             this.order_butoon.AutoRoundedCorners = true;
             this.order_butoon.BackColor = System.Drawing.Color.Transparent;
-            this.order_butoon.BorderRadius = 21;
+            this.order_butoon.BorderRadius = 26;
             this.order_butoon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.order_butoon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.order_butoon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -68,9 +69,10 @@
             this.order_butoon.FillColor = System.Drawing.Color.White;
             this.order_butoon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.order_butoon.ForeColor = System.Drawing.Color.Black;
-            this.order_butoon.Location = new System.Drawing.Point(30, 312);
+            this.order_butoon.Location = new System.Drawing.Point(40, 384);
+            this.order_butoon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.order_butoon.Name = "order_butoon";
-            this.order_butoon.Size = new System.Drawing.Size(180, 45);
+            this.order_butoon.Size = new System.Drawing.Size(240, 55);
             this.order_butoon.TabIndex = 1;
             this.order_butoon.Text = "ORDERS";
             this.order_butoon.UseTransparentBackground = true;
@@ -80,7 +82,7 @@
             // 
             this.products_button.AutoRoundedCorners = true;
             this.products_button.BackColor = System.Drawing.Color.Transparent;
-            this.products_button.BorderRadius = 21;
+            this.products_button.BorderRadius = 26;
             this.products_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.products_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.products_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -88,9 +90,10 @@
             this.products_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(51)))));
             this.products_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.products_button.ForeColor = System.Drawing.Color.White;
-            this.products_button.Location = new System.Drawing.Point(30, 412);
+            this.products_button.Location = new System.Drawing.Point(40, 507);
+            this.products_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.products_button.Name = "products_button";
-            this.products_button.Size = new System.Drawing.Size(180, 45);
+            this.products_button.Size = new System.Drawing.Size(240, 55);
             this.products_button.TabIndex = 2;
             this.products_button.Text = "PRODUCTS";
             this.products_button.UseTransparentBackground = true;
@@ -99,7 +102,7 @@
             // 
             this.payment_button.AutoRoundedCorners = true;
             this.payment_button.BackColor = System.Drawing.Color.Transparent;
-            this.payment_button.BorderRadius = 21;
+            this.payment_button.BorderRadius = 26;
             this.payment_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.payment_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.payment_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -107,9 +110,10 @@
             this.payment_button.FillColor = System.Drawing.Color.White;
             this.payment_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.payment_button.ForeColor = System.Drawing.Color.Black;
-            this.payment_button.Location = new System.Drawing.Point(30, 512);
+            this.payment_button.Location = new System.Drawing.Point(40, 630);
+            this.payment_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.payment_button.Name = "payment_button";
-            this.payment_button.Size = new System.Drawing.Size(180, 45);
+            this.payment_button.Size = new System.Drawing.Size(240, 55);
             this.payment_button.TabIndex = 3;
             this.payment_button.Text = "PAYMENTS";
             this.payment_button.UseTransparentBackground = true;
@@ -117,18 +121,21 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Location = new System.Drawing.Point(326, 203);
+            this.dataGridView1.ColumnHeadersHeight = 29;
+            this.dataGridView1.Location = new System.Drawing.Point(435, 250);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(656, 405);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(875, 498);
             this.dataGridView1.TabIndex = 0;
             // 
             // admin_products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cocosubbetaversion.Properties.Resources.C__x_CocoSub__34_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1344, 897);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.payment_button);
             this.Controls.Add(this.products_button);
@@ -136,9 +143,12 @@
             this.Controls.Add(this.user_button);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "admin_products";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_products";
+            this.Load += new System.EventHandler(this.admin_products_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

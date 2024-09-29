@@ -82,5 +82,10 @@ namespace cocosubbetaversion
             form.Show();
             this.Hide();
         }
+
+        private void admin_products_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

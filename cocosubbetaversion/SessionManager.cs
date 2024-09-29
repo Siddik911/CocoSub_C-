@@ -9,9 +9,9 @@ namespace cocosubbetaversion
     public static class SessionManager
     {
         public static string UserName { get; set; }
+        public static int UserId { get; set; } 
         public static string Email { get; set; }
-
-        public static int? menu_id { get; set; } // Change the type to nullable int
+        public static int menu_id { get; set; } 
 
         // Add other user-related properties as needed
 
@@ -19,7 +19,8 @@ namespace cocosubbetaversion
         {
             UserName = null;
             Email = null;
-            menu_id = null;
+            menu_id = 0;
+            UserId = 0;
 
             // Clear other properties
         }

@@ -7,7 +7,7 @@ namespace cocosubbetaversion
     public partial class signup : Form
     {
         // Connection string to your MySQL database
-        string connectionString = "Server=192.168.0.121;Database=cocodb;Uid=rafid;Pwd=admin;";
+        string connectionString = "Server=localhost;Database=cocodb;Uid=root;Pwd=admin;";
 
         // Variable to store the role based on the checkbox state
         int role = 0;
@@ -76,7 +76,7 @@ namespace cocosubbetaversion
                     }
 
                     connection.Open();
-                    string query = "INSERT INTO user (Name, Email, Pass) VALUES (@name, @email, @password)";
+                    string query = "INSERT INTO user (Uname, Uemail, Upass) VALUES (@name, @email, @password)";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@name", name);
                     command.Parameters.AddWithValue("@email", email);
@@ -89,11 +89,14 @@ namespace cocosubbetaversion
                     int userId = Convert.ToInt32(selectCommand.ExecuteScalar());
 
                     // Update the user table column Role of the last added User_id based on the checkbox
-                    string updateQuery = "UPDATE user SET Role = @role WHERE User_id = @userId";
+                    string updateQuery = "UPDATE user SET Urole = @role WHERE User_id = @userId";
                     MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection);
                     updateCommand.Parameters.AddWithValue("@role", role);
                     updateCommand.Parameters.AddWithValue("@userId", userId);
                     updateCommand.ExecuteNonQuery();
+
+                    // Set the UserId in the SessionManager
+                    SessionManager.UserId = userId;
 
                     SignupUser(name, email);
 
@@ -164,6 +167,16 @@ namespace cocosubbetaversion
             //var mainForm = new MainForm();
             //mainForm.Show();
             //this.Hide();
+        }
+
+        private void signup_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
