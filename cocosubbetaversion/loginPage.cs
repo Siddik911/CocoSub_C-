@@ -13,7 +13,6 @@ namespace cocosubbetaversion
         public loginPage()
         {
             InitializeComponent();
-            
         }
 
         private void loginPage_Load(object sender, EventArgs e)
@@ -24,7 +23,6 @@ namespace cocosubbetaversion
         private void loginButton1_Click(object sender, EventArgs e)
         {
             PerformLogin();
-
         }
 
         // Method to handle the login logic
@@ -44,39 +42,42 @@ namespace cocosubbetaversion
             // Call the method to check login credentials
             if (ValidateLogin(email, password, out int isSubbed, out int role))
             {
-                if (role == 1)
+                // Fetch UserName and UserId
+                if (LoginUser(email))
                 {
-                    // Redirect to admin_users form
-                    admin_users adminDashboard = new admin_users();
-                    this.Hide();  // Hide the login page
-                    adminDashboard.Show();  // Show the admin_users form
-                }
-                else
-                {
-                    // Proceed with regular redirection based on isSubbed value
-                    if (isSubbed == 1)
+                    if (role == 1)
                     {
-                        sub_dash subDashboard = new sub_dash();
-                        this.Hide();
-                        subDashboard.Show();
+                        // Redirect to admin_users form
+                        admin_users adminDashboard = new admin_users();
+                        this.Hide();  // Hide the login page
+                        adminDashboard.Show();  // Show the admin_users form
                     }
                     else
                     {
-                        sub_plan subPlan = new sub_plan();
-                        this.Hide();
-                        subPlan.Show();
+                        // Proceed with regular redirection based on isSubbed value
+                        if (isSubbed == 1)
+                        {
+                            sub_dash subDashboard = new sub_dash();
+                            this.Hide();
+                            subDashboard.Show();
+                        }
+                        else
+                        {
+                            sub_plan subPlan = new sub_plan();
+                            this.Hide();
+                            subPlan.Show();
+                        }
                     }
                 }
-
-                LoginUser(Name, email);
-
+                else
+                {
+                    MessageBox.Show("Unable to fetch user details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
                 MessageBox.Show("Invalid email or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            MessageBox.Show($"User ID: {SessionManager.UserId}", "User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
 
         // Method to validate login credentials from the database
@@ -103,9 +104,9 @@ namespace cocosubbetaversion
                         {
                             if (reader.Read())
                             {
-                                // Retrieve the IsSubbed and Role values
+                                // Retrieve the isSubbed and role values
                                 isSubbed = reader.GetInt32("is_subbed");
-                                role = reader.GetInt32("Urole");
+                                role = reader.GetInt32("URole");
                                 return true;
                             }
                         }
@@ -136,57 +137,45 @@ namespace cocosubbetaversion
             login_pass_text.PasswordChar = checkBox1.Checked ? '\0' : '*';
         }
 
-        private void LoginUser(string userName, string email)
+        // Method to login the user and set SessionManager variables
+        private bool LoginUser(string email)
         {
-            // Assuming userName and email are obtained after successful login/signup
-            SessionManager.UserName = userName;
-            SessionManager.Email = email;
-
-            // Fetch UserId using email from the database
-            string connectionString = "Server=localhost;Database=cocodb;Uid=root;Pwd=admin;";
+            // Query to fetch User_id and Uname based on the email
+            string query = "SELECT User_id, Uname FROM user WHERE Uemail = @Uemail";
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    connection.Open();
-
-                    // SQL query to fetch User_id based on the email
-                    string query = "SELECT User_id FROM user WHERE Uemail = @Uemail";
-                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    conn.Open();
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        command.Parameters.AddWithValue("@Uemail", email);
+                        // Use parameters to prevent SQL injection
+                        cmd.Parameters.AddWithValue("@Uemail", email);
 
-                        // Execute the query and get the User_id
-                        object result = command.ExecuteScalar();
-                        if (result != null)
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            // Set UserId in SessionManager
-                            SessionManager.UserId = Convert.ToInt32(result);
-
-                            // Show the User_id in a dialog box
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("User not found. Please check the email.");
-                            return; // Exit if user not found
+                            if (reader.Read())
+                            {
+                                // Set UserId and UserName in SessionManager
+                                SessionManager.UserId = reader.GetInt32("User_id");
+                                SessionManager.UserName = reader.GetString("Uname");
+                                return true;
+                            }
+                            else
+                            {
+                                MessageBox.Show("User not found. Please check the email.");
+                                return false; // Exit if user not found
+                            }
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error fetching User ID: " + ex.Message);
+                MessageBox.Show($"Error fetching User ID or UserName: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
-
-           
-            // Optionally, navigate to the main form
-            //var mainForm = new MainForm();
-            //mainForm.Show();
-            //this.Hide();
-
         }
-
     }
 }

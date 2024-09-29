@@ -20,7 +20,7 @@ namespace cocosubbetaversion
             UserName = null;
             Email = null;
             menu_id = 0;
-            UserId = 0;
+            UserId = 5;
 
             // Clear other properties
         }
