@@ -174,7 +174,7 @@ namespace cocosubbetaversion
                 MessageBox.Show("Error: " + ex.Message);
             }
 
-            MessageBox.Show($"User ID: {SessionManager.UserId}\nMenu ID: {SessionManager.menu_id}\nCredits Left: {totalCredit}", "User Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show($"User ID: {SessionManager.UserId}\nMenu ID: {SessionManager.menu_id}\nCredits Left: {totalCredit}", "User Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void name_on_card_text_TextChanged(object sender, EventArgs e)

@@ -49,30 +49,64 @@ namespace cocosubbetaversion
                 var selectedDrink = drink_list.SelectedItem;
                 string selectedDrinkId = selectedDrink.GetType().GetProperty("Value").GetValue(selectedDrink).ToString();
 
+
+
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    string insertQuery = "INSERT INTO orders (UId, OrderDate, MenuId) VALUES (@UId, @OrderDate, @MenuId)";
-                    MySqlCommand command = new MySqlCommand(insertQuery, connection);
-
-                    // Set the parameters for the query
-                    command.Parameters.AddWithValue("@UId", 1); // Replace with actual user ID
-                    command.Parameters.AddWithValue("@OrderDate", DateTime.Now);
-                    command.Parameters.AddWithValue("@MenuId", selectedDrinkId);
+                    // Transaction to handle both insert and update together
+                    MySqlTransaction transaction = null;
 
                     try
                     {
+                        // Open the connection
                         connection.Open();
-                        command.ExecuteNonQuery();
 
+                        // Begin transaction
+                        transaction = connection.BeginTransaction();
+
+                        // Insert the order into the orders table
+                        string insertQuery = "INSERT INTO orders (UId, OrderDate, MenuId) VALUES (@UId, @OrderDate, @MenuId)";
+                        MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection, transaction);
+
+                        // Set the parameters for the insert query
+                        insertCommand.Parameters.AddWithValue("@UId", SessionManager.UserId);
+                        insertCommand.Parameters.AddWithValue("@OrderDate", DateTime.Now);
+                        insertCommand.Parameters.AddWithValue("@MenuId", selectedDrinkId);
+
+                        // Execute the insert command
+                        insertCommand.ExecuteNonQuery();
+
+                        // Update CreditsLeft in the user table, reducing it by 1
+                        string updateCreditsQuery = "UPDATE user SET CreditsLeft = CreditsLeft - 1 WHERE User_id = @UserId";
+                        MySqlCommand updateCreditsCommand = new MySqlCommand(updateCreditsQuery, connection, transaction);
+
+                        // Set the parameter for the update query
+                        updateCreditsCommand.Parameters.AddWithValue("@UserId", SessionManager.UserId);
+
+                        // Execute the update command
+                        updateCreditsCommand.ExecuteNonQuery();
+
+                        // Commit the transaction
+                        transaction.Commit();
+
+                        // Show success form
                         succesfully_recived_order succesfully_recived_order = new succesfully_recived_order();
                         succesfully_recived_order.Show();
                         this.Hide();
                     }
                     catch (Exception ex)
                     {
+                        // Rollback the transaction in case of an error
+                        if (transaction != null)
+                        {
+                            transaction.Rollback();
+                        }
+
+                        // Show the error message
                         MessageBox.Show("Error submitting order: " + ex.Message);
                     }
                 }
+
             }
             else
             {

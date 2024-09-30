@@ -176,6 +176,9 @@ namespace cocosubbetaversion
 
         private void back_button_Click(object sender, EventArgs e)
         {
+            welcomepage welcome = new welcomepage();
+            welcome.Show();
+            this.Hide();
 
         }
     }

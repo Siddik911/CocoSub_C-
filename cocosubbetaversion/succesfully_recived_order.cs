@@ -16,5 +16,12 @@ namespace cocosubbetaversion
         {
             InitializeComponent();
         }
+
+        private void GO_HOMRPAGE_BUTTON_Click(object sender, EventArgs e)
+        {
+            sub_dash sub_Dash = new sub_dash();
+            sub_Dash.Show();
+            this.Hide();
+        }
     }
 }

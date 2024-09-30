@@ -31,8 +31,8 @@ namespace cocosubbetaversion
                 {
                     connection.Open();
 
-                    MessageBox.Show($"User ID: {SessionManager.UserId}", "User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    sub_plan_name.Text = SessionManager.UserId.ToString();
+                    //MessageBox.Show($"User ID: {SessionManager.UserId}", "User ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //sub_plan_name.Text = SessionManager.UserId.ToString();
 
 
 
@@ -101,6 +101,7 @@ namespace cocosubbetaversion
                     {
                         if (creditReader.Read())
                         {
+                            credit_left_label.Text = " left credits";
                             int totalCredit =  Convert.ToInt32(creditReader["CreditsLeft"]) ;
                             credit_left_label.Text = totalCredit.ToString();
                         }
@@ -122,10 +123,10 @@ namespace cocosubbetaversion
 
 
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        //private void label2_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void log_out_button_Click(object sender, EventArgs e)
         {
@@ -148,6 +149,11 @@ namespace cocosubbetaversion
         }
 
         private void description_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

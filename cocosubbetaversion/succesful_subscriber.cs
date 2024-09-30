@@ -21,5 +21,12 @@ namespace cocosubbetaversion
         {
 
         }
+
+        private void redeem_button_Click(object sender, EventArgs e)
+        {
+            sub_dash sub_dashboard = new sub_dash();
+            sub_dashboard.Show();
+            this.Hide();
+        }
     }
 }

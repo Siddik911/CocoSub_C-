@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -80,15 +81,15 @@
             // 
             // sub_plan_name
             // 
-            this.sub_plan_name.AutoSize = true;
             this.sub_plan_name.BackColor = System.Drawing.Color.Transparent;
-            this.sub_plan_name.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sub_plan_name.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.sub_plan_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.sub_plan_name.Location = new System.Drawing.Point(446, 178);
+            this.sub_plan_name.Location = new System.Drawing.Point(375, 172);
             this.sub_plan_name.Name = "sub_plan_name";
-            this.sub_plan_name.Size = new System.Drawing.Size(83, 37);
+            this.sub_plan_name.Size = new System.Drawing.Size(230, 50);
             this.sub_plan_name.TabIndex = 4;
             this.sub_plan_name.Text = "lover";
+            this.sub_plan_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // description_label
             // 
@@ -157,7 +158,6 @@
             this.notify_expiry.Size = new System.Drawing.Size(265, 30);
             this.notify_expiry.TabIndex = 9;
             this.notify_expiry.Text = "You\'ll be again charged on";
-            this.notify_expiry.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
